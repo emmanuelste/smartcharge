@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#001f27", "tertiary": "#00242d", "background": "#f9f9ff", "surface-container-low": "#f0f3ff", "surface": "#f9f9ff", "secondary-fixed-dim": "#59df89", "surface-variant": "#dee2f0", "on-secondary-container": "#00723a", "error": "#ba1a1a", "surface-container": "#e9eefc", "on-surface-variant": "#44474e", "on-error": "#ffffff", "on-primary-fixed": "#001b3d", "tertiary-container": "#003b49", "inverse-primary": "#aec7f7", "inverse-surface": "#2b303b", "secondary": "#006d38", "on-secondary-fixed": "#00210d", "error-container": "#ffdad6", "surface-container-high": "#e4e8f6", "on-secondary-fixed-variant": "#005228", "on-primary-fixed-variant": "#2e476f", "inverse-on-surface": "#ecf0fe", "secondary-fixed": "#77fca3", "on-tertiary-fixed-variant": "#004e5f", "on-surface": "#171c25", "surface-container-highest": "#dee2f0", "surface-bright": "#f9f9ff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-dim": "#d6dae7", "on-secondary": "#ffffff", "primary-container": "#1b365d", "on-error-container": "#93000a", "surface-tint": "#465f88", "secondary-container": "#74f9a0", "tertiary-fixed-dim": "#4cd6fb", "surface-container-lowest": "#ffffff", "on-background": "#171c25", "primary-fixed": "#d6e3ff", "primary-fixed-dim": "#aec7f7", "outline": "#74777f", "on-primary-container": "#87a0cd", "primary": "#002046", "tertiary-fixed": "#b3ebff", "outline-variant": "#c4c6cf", "on-tertiary-container": "#00adcf" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-xl": "2.5rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "label-lg": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "headline-xl": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg"><div class="px-space-lg mb-space-lg flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Reliance SCADA Core</span><span class="font-headline-md text-headline-md text-primary">Switch Operations</span><span class="font-label-sm text-label-sm text-on-surface-variant">EWURA Lic. ESP-TZ-2026</span></div><nav class="flex-1 px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-headline-md rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-body-md text-body-md" data-path="network-overview" href="#"><span class="material-symbols-outlined text-[20px]">hub</span>Network SCADA Hub</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all gap-space-sm bg-primary text-on-primary font-headline-md rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="agent-box-operations" href="#"><span class="material-symbols-outlined text-[20px]">ev_station</span>Agent Box Terminals</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-body-md text-body-md" data-path="ewura-compliance" href="#"><span class="material-symbols-outlined text-[20px]">verified</span>EWURA Compliance</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-body-md text-body-md" data-path="telecom-settlement" href="#"><span class="material-symbols-outlined text-[20px]">payments</span>M-Pesa &amp; Tigo Switch</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all gap-space-sm font-body-md text-body-md" data-path="fleet-telemetry" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span>Fleet Telemetry &amp; SOC</a></nav><div class="px-space-lg pt-space-md"><div class="bg-surface-container-high p-space-sm rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface font-bold">2G/SMS Gateway</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Latency: 42ms | SLO 99.4%</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #1b365d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2o9GAep9dZdDVgdsdYhdOB_OKsd1gLU9WsX0GiUYyPYqKC2tg1un7lzQIJwmDzh8Gpi1adnuQCDFc8WpJXRLLCbEzpmgMMhE4RpReVjR_LCsSUSZNf_RlX7IAwU19cQRih5uQRDjoR3bVJZaZBqulwqsjQqltSqcW54PKll9J-KnFTmVAP4uRUN6R8WctBDqnJ9JVAMnvF7enEjOjq-38JtToYn4WQtLNTP707LDW6EMTyT0DnFxgRFM9"/><span class="font-headline-md text-headline-md text-primary">SmartCharge Admin</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">EWURA Interoperable Switch Active</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="material-symbols-outlined text-secondary text-[18px]">cell_tower</span><span class="font-label-sm text-label-sm text-on-surface font-bold">Vodacom / Tigo Pesa Till Connected</span></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col"><span class="font-body-sm text-body-sm font-bold text-on-surface">Operator Admin</span><span class="font-label-sm text-label-sm text-on-surface-variant">Class A Master Console</span></div></div></div></header><main class="relative pt-20 bg-surface min-h-screen w-full px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP CONTEXT / NODE STATUS & 90/10 SETTLEMENT BAR -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-space-sm py-space-xs rounded font-bold uppercase tracking-wider">
+          Node #1001
+        </span>
+<span class="font-headline-md text-headline-md text-primary">
+          Kijitonyama Sub-Station Terminal
+        </span>
+<div class="flex items-center gap-space-xs bg-secondary-container/20 text-on-secondary-container px-space-sm py-space-xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold">ESP32 Hardware Online (SIM800L 2G SMS Switch)</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">signal_cellular_alt</span>
+          GSM RSSI: <strong class="text-on-surface">88% (-65 dBm)</strong>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+          DS3231 RTC: <strong class="text-on-surface">Synced (EAT +03:00)</strong>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">electric_meter</span>
+          PZEM-016 Modbus: <strong class="text-on-surface">Polling OK (0x01)</strong>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+          30A Zero-Crossing SSR: <strong class="text-secondary font-bold">READY (0ms drift)</strong>
+</span>
+</div>
+</div>
+<!-- Settlement Quick Glance -->
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="px-space-md py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Today's Net Profit (90%)</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">38,420 TZS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instant B2C Payout to M-Pesa</span>
+</div>
+<div class="w-px h-10 bg-surface-container-highest hidden sm:block"></div>
+<div class="px-space-md py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Virtual Escrow Balance</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">14,800 TZS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recharge Loop Buffer</span>
+</div>
+<div class="w-px h-10 bg-surface-container-highest hidden sm:block"></div>
+<div class="px-space-md py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">TANESCO Grid Metred</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">21.4 kWh</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">-13,482 TZS Auto-Deducted</span>
+</div>
+</div>
+</div>
+<!-- DUAL OPERATIONAL WORKSPACE (SURFACE A & SURFACE C) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- SURFACE A: ESP32 PHYSICAL AGENT BOX EMULATOR (5 COLS) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Box Chassis Header -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">developer_board</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">Surface A: ESP32 Box</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hardware Console &amp; ESC/POS Printer</span>
+</div>
+</div>
+<span class="bg-secondary/10 text-secondary font-label-sm text-label-sm px-space-sm py-space-xs rounded font-bold">
+            FW v3.12-PROD
+          </span>
+</div>
+<!-- 0.96" OLED Monochrome/Cyan Screen (128x64 Simulation) -->
+<div class="relative bg-tertiary text-tertiary-fixed p-space-md rounded-xl shadow-inner flex flex-col justify-between h-44 overflow-hidden font-label-lg text-label-lg select-none">
+<div class="flex justify-between items-center text-tertiary-fixed-dim text-[11px] pb-1 border-b border-tertiary-container">
+<span>SMARTCHARGE 2G-NET</span>
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 bg-secondary-fixed rounded-full animate-pulse"></span>
+              LIVE #1001
+            </span>
+</div>
+<div class="flex flex-col gap-1 py-1 font-label-sm text-label-sm text-tertiary-fixed tracking-wide" id="oled-screen">
+<div class="text-tertiary-fixed-dim">[ SMARTCHARGE (2G) - READY ]</div>
+<div class="text-secondary-fixed font-bold">[ 1.Direct  2.Prem  3.Swap ]</div>
+<div>[ Agent ID: #1001 | 220V ]</div>
+<div class="text-tertiary-fixed-dim">[ Current SoC: <span class="text-tertiary-fixed font-bold" id="oled-soc-val">40% -&gt; 100%</span> ]</div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-tertiary-fixed-dim pt-1 border-t border-tertiary-container">
+<span>SSR: ON (30A)</span>
+<span>ESCROW: 14.8k TZS</span>
+<span>SMS-QUEUE: 0</span>
+</div>
+</div>
+<!-- 4x4 Tactile Membrane Keypad -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">4x4 Matrix Membrane Keypad</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">GPIO Interrupted</span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center font-label-lg text-label-lg">
+<!-- Row 1 -->
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('1')">1</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('2')">2</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('3')">3</button>
+<button class="bg-primary-container text-on-primary active:bg-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('A')">A</button>
+<!-- Row 2 -->
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('4')">4</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('5')">5</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('6')">6</button>
+<button class="bg-primary-container text-on-primary active:bg-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('B')">B</button>
+<!-- Row 3 -->
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('7')">7</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('8')">8</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('9')">9</button>
+<button class="bg-primary-container text-on-primary active:bg-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('C')">C</button>
+<!-- Row 4 -->
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('*')">*</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('0')">0</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface active:bg-primary active:text-on-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('#')">#</button>
+<button class="bg-primary-container text-on-primary active:bg-primary p-3 rounded-lg shadow-sm font-bold transition-all" onclick="pressKey('D')">D</button>
+</div>
+<!-- Rapid Action Hardware Triggers -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<button class="bg-secondary text-on-secondary font-label-md text-label-md py-space-sm px-space-md rounded-lg shadow font-bold flex items-center justify-center gap-1 active:scale-95 transition-transform" onclick="pressAction('DIRECT')">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+              1. Direct Charge
+            </button>
+<button class="bg-tertiary-container text-tertiary-fixed font-label-md text-label-md py-space-sm px-space-md rounded-lg shadow font-bold flex items-center justify-center gap-1 active:scale-95 transition-transform" onclick="pressAction('SWAP')">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+              2. Instant Swap
+            </button>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="bg-primary text-on-primary font-label-md text-label-md py-2 rounded-lg font-bold" onclick="pressAction('OK')">
+              [ OK / CONFIRM ]
+            </button>
+<button class="bg-surface-container-lowest text-error font-label-md text-label-md py-2 rounded-lg font-bold" onclick="pressAction('CANCEL')">
+              [ CANCEL ]
+            </button>
+</div>
+</div>
+<!-- 58mm ESC/POS Thermal Receipt Printer Preview -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">receipt_long</span>
+              58mm Thermal ESC/POS Receipt
+            </span>
+<button class="text-secondary font-label-sm text-label-sm font-bold hover:underline" onclick="printSampleReceipt()">
+              Test Print Feed
+            </button>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow font-label-sm text-label-sm text-on-surface flex flex-col gap-1 tracking-tight leading-4 select-all">
+<div class="text-center font-bold">================================</div>
+<div class="text-center font-bold tracking-wider">SMARTCHARGE TANZANIA</div>
+<div class="text-center text-[10px] text-on-surface-variant">Reliance Solutions &amp; Tech (T) Ltd</div>
+<div class="text-center text-[10px] text-on-surface-variant">EWURA Lic: ESP-TZ-2026-KIJ</div>
+<div class="text-center font-bold">================================</div>
+<div class="flex justify-between"><span>Agent Node:</span><span>#1001 (Kijitonyama)</span></div>
+<div class="flex justify-between"><span>Txn ID:</span><span id="receipt-txnid">TXN-88492019</span></div>
+<div class="flex justify-between"><span>Timestamp:</span><span id="receipt-time">2026-04-12 14:32</span></div>
+<div class="flex justify-between"><span>Vehicle Reg:</span><span>Bajaj T 482 DXC</span></div>
+<div class="flex justify-between"><span>Service:</span><span>Standard Direct AC Gun</span></div>
+<div class="flex justify-between"><span>Energy Delivered:</span><span>3.60 kWh (PZEM-016)</span></div>
+<div class="flex justify-between"><span>Battery SoC:</span><span>40% -&gt; 100% Fully Metred</span></div>
+<div class="text-center font-bold pt-1">--------------------------------</div>
+<div class="flex justify-between font-bold text-on-surface"><span>TOTAL PAID:</span><span>2,268 TZS</span></div>
+<div class="flex justify-between text-secondary font-bold"><span>Agent Net (90%):</span><span>+755 TZS (B2C)</span></div>
+<div class="flex justify-between text-[10px] text-on-surface-variant"><span>TANESCO Grid Cost:</span><span>1,313 TZS</span></div>
+<div class="flex justify-between text-[10px] text-on-surface-variant"><span>Reliance Switch (10%):</span><span>200 TZS</span></div>
+<div class="text-center font-bold">================================</div>
+<div class="text-center text-[10px] font-bold text-secondary">USSD Fast Handshake: *150*00# Verified</div>
+<div class="text-center text-[9px] text-on-surface-variant">Asante kwa kutumia nishati safi!</div>
+</div>
+</div>
+<!-- Hardware Diagnostics Readout -->
+<div class="bg-surface-container-high p-space-sm rounded-xl flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Sub-System Physical Telemetry</span>
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">HV/LV Iso</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">3cm Physical OK</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Creepage</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">8mm Slot OK</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Zero-Crossing</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">0 ms Drift</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SURFACE C: STATION ATTENDANT APP & BAY CONTROLLER (7 COLS) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Attendant Quick Action Header with Driver QR Scan -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">ev_station</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">Surface C: Attendant Terminal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Bay Supervisory Control &amp; Virtual Escrow</span>
+</div>
+</div>
+<!-- Rapid QR Scan Trigger -->
+<button class="bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md px-space-md py-space-sm rounded-xl flex items-center justify-center gap-space-xs shadow transition-all active:scale-95" onclick="simulateScanDriver()">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+<span>Scan Driver QR (Bajaj / Boda)</span>
+</button>
+</div>
+<div class="hidden bg-secondary-container/20 text-on-secondary-container p-space-sm rounded-lg flex items-center justify-between font-label-md text-label-md" id="scan-feedback">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+            Driver Authenticated: <strong>Juma Athumani (T 482 DXC)</strong> | M-Pesa Authorized
+          </span>
+<span class="font-bold text-secondary">Ready for Bay Allocation</span>
+</div>
+<!-- 3 LIVE BAYS MONITORS -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Bay #1: Direct AC Gun 1 (Active) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">BAY #1</span>
+</div>
+<span class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-space-xs py-0.5 rounded font-bold">Charging</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bajaj T 482 DXC</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">68%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">2.1 kW (PZEM)</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container h-2 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 68%;"></div>
+</div>
+</div>
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+<span>Est. Remaining: <strong>18 min</strong></span>
+<button class="text-error hover:underline font-bold" onclick="emergencyStopBay(1)">Cut-off</button>
+</div>
+</div>
+<!-- Bay #2: Direct AC Gun 2 (Available) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">BAY #2</span>
+</div>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-space-xs py-0.5 rounded font-bold">Idle / Ready</span>
+</div>
+<div class="flex flex-col py-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gun Type: GB/T &amp; CCS2</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">Waiting for vehicle</span>
+<span class="font-label-sm text-label-sm text-secondary">220V Standby Active</span>
+</div>
+<div class="flex justify-between items-center pt-space-xs">
+<button class="w-full bg-primary text-on-primary py-1.5 rounded-lg font-label-sm text-label-sm font-bold hover:bg-primary-container transition-colors" onclick="pressAction('DIRECT')">
+                Connect Next Vehicle
+              </button>
+</div>
+</div>
+<!-- Bay #3: Instant Swapping Dock (Rack Inventory) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm shadow-sm">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">BAY #3</span>
+</div>
+<span class="bg-tertiary-container text-tertiary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded font-bold">Rack Dock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Swap Inventory Status</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">6 / 8</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Ready (100%)</span>
+</div>
+<!-- 8 Slot Mini Graphic -->
+<div class="grid grid-cols-4 gap-1 mt-2">
+<div class="h-3 bg-secondary rounded-xs" title="Slot 1: 100%"></div>
+<div class="h-3 bg-secondary rounded-xs" title="Slot 2: 100%"></div>
+<div class="h-3 bg-secondary rounded-xs" title="Slot 3: 100%"></div>
+<div class="h-3 bg-secondary rounded-xs" title="Slot 4: 100%"></div>
+<div class="h-3 bg-secondary rounded-xs" title="Slot 5: 100%"></div>
+<div class="h-3 bg-secondary rounded-xs" title="Slot 6: 100%"></div>
+<div class="h-3 bg-tertiary-fixed-dim rounded-xs" title="Slot 7: Recharging (54%)"></div>
+<div class="h-3 bg-surface-container-highest rounded-xs" title="Slot 8: Empty"></div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Avg Swap Time: <strong>48s</strong></span>
+<span class="text-secondary font-bold">Escrow Sync</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DEPLETED BATTERY CHECK-IN & VIRTUAL ESCROW RECONCILIATION MODULE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">published_with_changes</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">Battery Check-in &amp; Virtual Escrow</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PZEM-016 Metred Recharge Loop &amp; M-Pesa Split</span>
+</div>
+</div>
+<span class="bg-surface-container-high text-on-surface-variant px-space-sm py-space-xs rounded font-label-sm text-label-sm font-bold">
+            EWURA Rule §4.2 Interop
+          </span>
+</div>
+<!-- Inspection Module Grid -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs border-b border-surface-container-highest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">battery_charging_full</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Incoming Pack: BAT-TZ-2026-8812</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-container/20 px-2 py-0.5 rounded">
+              Physical Casing Inspection: PASSED (No Swell)
+            </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm py-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depleted SoC</span>
+<span class="font-headline-md text-headline-md text-error font-bold">20.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Needs 4.8 kWh full loop</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">State of Health (SOH)</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">96.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cycle Count: 312</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gross Escrow Held</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">4,626 TZS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">From Customer M-Pesa</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Agent Payout</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">+2,912 TZS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net 90% after TANESCO</span>
+</div>
+</div>
+<!-- Escrow Pipeline Progress Breakdown -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Escrow Financial Settlement Lifecycle:</span>
+<span class="text-secondary font-bold">4,626 TZS Gross -&gt; 1,714 TZS TANESCO (4.8 kWh) -&gt; 2,912 TZS Agent B2C</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full flex overflow-hidden">
+<div class="bg-error h-full" style="width: 37%;" title="TANESCO Grid Cost: 1,714 TZS (37%)"></div>
+<div class="bg-primary h-full" style="width: 10%;" title="Reliance Switch Fee: 10%"></div>
+<div class="bg-secondary h-full" style="width: 53%;" title="Agent Profit B2C: 2,912 TZS (53%)"></div>
+</div>
+<div class="flex justify-between text-[11px] text-on-surface-variant pt-0.5">
+<span>Grid Tariffs Auto-deducted</span>
+<span>Instant M-Pesa Switch B2C Payout</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<button class="flex-1 bg-secondary text-on-secondary font-label-md text-label-md py-space-sm px-space-md rounded-xl font-bold flex items-center justify-center gap-space-xs shadow hover:bg-secondary/90 transition-transform active:scale-98" id="btn-handover" onclick="executeSwapProcess()">
+<span class="material-symbols-outlined text-[18px]">swap_horizontal_circle</span>
+<span>Hand Over 100% Calibrated Pack &amp; Start Bay Escrow Loop</span>
+</button>
+<button class="bg-surface-container-highest text-error font-label-md text-label-md py-space-sm px-space-md rounded-xl font-bold flex items-center justify-center gap-1 hover:bg-error-container hover:text-on-error-container transition-colors" onclick="flagBatteryDefect()">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+<span>Flag Fault / Swell</span>
+</button>
+</div>
+<div class="hidden bg-secondary-container/30 text-on-secondary-container p-space-sm rounded-lg font-label-sm text-label-sm flex items-center gap-2" id="swap-notification">
+<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span>
+<span>Pack #BAT-TZ-2026-8812 slotted into Bay Escrow Slot 7. Calibrated Pack #BAT-TZ-2026-4401 handed to driver. 2,912 TZS staged for automated B2C release.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AGENT EARNINGS LEDGER & B2C AUTOMATED SETTLEMENT (FULL WIDTH) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">account_balance_wallet</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">Agent 90/10 Earnings Ledger</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live M-Pesa B2C Automated Settlement Stream</span>
+</div>
+</div>
+<!-- Referral Bonus Card Tag -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[22px]">card_membership</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Shopkeeper Referral Bounty</span>
+<span class="font-label-md text-label-md font-bold text-secondary">100,000 TZS Earned (2 Agents Active)</span>
+</div>
+</div>
+</div>
+<!-- Ledger Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Session ID &amp; Time</th>
+<th class="py-space-sm px-space-md">Vehicle &amp; Customer</th>
+<th class="py-space-sm px-space-md">Service Type</th>
+<th class="py-space-sm px-space-md">Gross Fee</th>
+<th class="py-space-sm px-space-md">TANESCO Grid Cost</th>
+<th class="py-space-sm px-space-md">Reliance 10%</th>
+<th class="py-space-sm px-space-md font-bold text-secondary">Agent Net (90%)</th>
+<th class="py-space-sm px-space-md rounded-r-lg">M-Pesa B2C State</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md font-label-sm text-label-sm">
+<strong class="text-on-surface">TXN-88492019</strong>
+<div class="text-on-surface-variant">14:32:04 EAT</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-bold text-on-surface">Bajaj T 482 DXC</div>
+<div class="text-on-surface-variant text-[11px]">Juma Athumani</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">Direct AC Gun</span>
+</td>
+<td class="py-space-sm px-space-md font-bold text-on-surface">2,268 TZS</td>
+<td class="py-space-sm px-space-md text-error">-1,313 TZS (3.6 kWh)</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">200 TZS</td>
+<td class="py-space-sm px-space-md font-headline-md text-headline-md text-secondary font-bold">+755 TZS</td>
+<td class="py-space-sm px-space-md">
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Paid (B2C #MP-9941)
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md font-label-sm text-label-sm">
+<strong class="text-on-surface">TXN-88492015</strong>
+<div class="text-on-surface-variant">13:58:12 EAT</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-bold text-on-surface">Pikipiki MC 891 ACZ</div>
+<div class="text-on-surface-variant text-[11px]">Hamisi Selemani</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">Instant Swap</span>
+</td>
+<td class="py-space-sm px-space-md font-bold text-on-surface">4,626 TZS</td>
+<td class="py-space-sm px-space-md text-error">-1,714 TZS (4.8 kWh)</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">462 TZS</td>
+<td class="py-space-sm px-space-md font-headline-md text-headline-md text-secondary font-bold">+2,450 TZS</td>
+<td class="py-space-sm px-space-md">
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Paid (B2C #MP-9920)
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-sm px-space-md font-label-sm text-label-sm">
+<strong class="text-on-surface">TXN-88491984</strong>
+<div class="text-on-surface-variant">12:15:40 EAT</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="font-bold text-on-surface">Bajaj T 109 BVG</div>
+<div class="text-on-surface-variant text-[11px]">Baraka Mwamba</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold">Instant Swap</span>
+</td>
+<td class="py-space-sm px-space-md font-bold text-on-surface">4,626 TZS</td>
+<td class="py-space-sm px-space-md text-error">-1,714 TZS (4.8 kWh)</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">462 TZS</td>
+<td class="py-space-sm px-space-md font-headline-md text-headline-md text-secondary font-bold">+2,450 TZS</td>
+<td class="py-space-sm px-space-md">
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Paid (B2C #MP-9884)
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Settlement Footer & Instant Withdrawal Button -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-bold text-on-surface">Automatic M-Pesa B2C Push Enabled</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Payments are pushed instantly after PZEM Modbus handshake confirmation. No manual bank delay.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="flex-1 md:flex-none bg-surface-container-highest text-on-surface font-label-md text-label-md px-space-md py-space-sm rounded-xl font-bold hover:bg-surface-container transition-colors" onclick="requestManualSync()">
+          Re-query Modbus Escrow
+        </button>
+<button class="flex-1 md:flex-none bg-secondary text-on-secondary font-label-md text-label-md px-space-lg py-space-sm rounded-xl font-bold shadow hover:bg-secondary/90 transition-transform active:scale-95 flex items-center justify-center gap-1" onclick="triggerImmediatePayout()">
+<span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+<span>Instant M-Pesa Flush (38,420 TZS)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function pressKey(val) {
+    const oled = document.getElementById('oled-screen');
+    const soc = document.getElementById('oled-soc-val');
+    if (val === '1') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ 1. DIRECT CHARGE AC ]</div>
+        <div class="text-secondary-fixed font-bold">[ PZEM: 220V / 16A ]</div>
+        <div>[ PIN OK: PRESS [OK] ]</div>
+        <div class="text-tertiary-fixed-dim">[ SSR 30A: ENGAGED ]</div>
+      `;
+    } else if (val === '2') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ 2. PREMIUM DUAL-PORT ]</div>
+        <div class="text-secondary-fixed font-bold">[ DUAL 3.3kW READY ]</div>
+        <div>[ SELECT BAY 1 OR 2 ]</div>
+        <div class="text-tertiary-fixed-dim">[ TARIFF: 630 TZS/kWh ]</div>
+      `;
+    } else if (val === '3') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ 3. BATTERY SWAP DOCK ]</div>
+        <div class="text-secondary-fixed font-bold">[ 6 FULL / 1 LOOPING ]</div>
+        <div>[ SCAN RFID / BARCODE ]</div>
+        <div class="text-tertiary-fixed-dim">[ ESCROW: AUTO 90/10 ]</div>
+      `;
+    } else {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ KEY INPUT: ${val} ]</div>
+        <div class="text-secondary-fixed font-bold">[ GSM SIGNAL: 88% ]</div>
+        <div>[ AGENT ID: #1001 ]</div>
+        <div class="text-tertiary-fixed-dim">[ STATUS: NORMAL ]</div>
+      `;
+    }
+  }
+
+  function pressAction(act) {
+    const oled = document.getElementById('oled-screen');
+    if (act === 'DIRECT') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ DIRECT CHARGE MODE ]</div>
+        <div class="text-secondary-fixed font-bold">[ GUN 1: INSERTED ]</div>
+        <div>[ PZEM-016: 220V 16A ]</div>
+        <div class="text-tertiary-fixed-dim">[ SSR RELAY: CLOSED ]</div>
+      `;
+    } else if (act === 'SWAP') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ SWAP TRANSACTION ]</div>
+        <div class="text-secondary-fixed font-bold">[ RACK UNLOCKED: SLOT 3 ]</div>
+        <div>[ SWAP OLD -&gt; NEW PACK ]</div>
+        <div class="text-tertiary-fixed-dim">[ ESCROW METRED 4.8kWh ]</div>
+      `;
+    } else if (act === 'OK') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ TRANSACTION CONFIRMED ]</div>
+        <div class="text-secondary-fixed font-bold">[ PRINTING RECEIPT... ]</div>
+        <div>[ SMS B2C SENT ]</div>
+        <div class="text-tertiary-fixed-dim">[ +755 TZS AGENT PROFIT ]</div>
+      `;
+    } else if (act === 'CANCEL') {
+      oled.innerHTML = `
+        <div class="text-tertiary-fixed-dim">[ SMARTCHARGE (2G) - READY ]</div>
+        <div class="text-secondary-fixed font-bold">[ 1.Direct  2.Prem  3.Swap ]</div>
+        <div>[ Agent ID: #1001 | 220V ]</div>
+        <div class="text-tertiary-fixed-dim">[ Current SoC: 40% -&gt; 100% ]</div>
+      `;
+    }
+  }
+
+  function printSampleReceipt() {
+    const txn = document.getElementById('receipt-txnid');
+    const time = document.getElementById('receipt-time');
+    const rand = Math.floor(10000000 + Math.random() * 90000000);
+    txn.innerText = 'TXN-' + rand;
+    const now = new Date();
+    time.innerText = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0') + ' ' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+    
+    const oled = document.getElementById('oled-screen');
+    oled.innerHTML = `
+      <div class="text-tertiary-fixed-dim">[ ESC/POS FEED ACTIVE ]</div>
+      <div class="text-secondary-fixed font-bold">[ 58mm HEAD CUT OK ]</div>
+      <div>[ TXN: TXN-${rand} ]</div>
+      <div class="text-tertiary-fixed-dim">[ TZS SETTLED ON-DEVICE ]</div>
+    `;
+  }
+
+  function simulateScanDriver() {
+    const feedback = document.getElementById('scan-feedback');
+    feedback.classList.remove('hidden');
+    setTimeout(() => {
+      pressAction('DIRECT');
+    }, 400);
+  }
+
+  function emergencyStopBay(bayNum) {
+    alert(`EMERGENCY CUT-OFF ENGAGED FOR BAY #${bayNum}. 30A Zero-crossing SSR tripped to OPEN safely.`);
+    const oled = document.getElementById('oled-screen');
+    oled.innerHTML = `
+      <div class="text-error font-bold">[ EMERGENCY CUT-OFF ]</div>
+      <div class="text-error">[ BAY #${bayNum} SSR: OPEN ]</div>
+      <div>[ CONTACT OPERATOR ]</div>
+      <div class="text-tertiary-fixed-dim">[ ISOLATION OK ]</div>
+    `;
+  }
+
+  function executeSwapProcess() {
+    const notif = document.getElementById('swap-notification');
+    const btn = document.getElementById('btn-handover');
+    notif.classList.remove('hidden');
+    btn.disabled = true;
+    btn.classList.add('opacity-50');
+    btn.innerHTML = `
+      <span class="material-symbols-outlined text-[18px] animate-spin">autorenew</span>
+      <span>Recharge Loop Initialized in Bay 3 (PZEM Escrow Active)...</span>
+    `;
+    pressAction('SWAP');
+  }
+
+  function flagBatteryDefect() {
+    alert('ALERT: Battery marked for quarantine inspection. Pack ID #BAT-TZ-2026-8812 isolated from charging dock.');
+  }
+
+  function requestManualSync() {
+    alert('Modbus Master Polling: PZEM-016 registers 0x0000 - 0x000A retrieved successfully. 0 CRC errors.');
+  }
+
+  function triggerImmediatePayout() {
+    alert('B2C Payout Triggered: 38,420 TZS sent to Agent M-Pesa Till. Reference: MP-B2C-2026-0412-99.');
+  }
+</script></main></div></body></html>

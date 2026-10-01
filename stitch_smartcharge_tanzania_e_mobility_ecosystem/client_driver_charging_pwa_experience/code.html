@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#001f27", "tertiary": "#00242d", "background": "#f9f9ff", "surface-container-low": "#f0f3ff", "surface": "#f9f9ff", "secondary-fixed-dim": "#59df89", "surface-variant": "#dee2f0", "on-secondary-container": "#00723a", "error": "#ba1a1a", "surface-container": "#e9eefc", "on-surface-variant": "#44474e", "on-error": "#ffffff", "on-primary-fixed": "#001b3d", "tertiary-container": "#003b49", "inverse-primary": "#aec7f7", "inverse-surface": "#2b303b", "secondary": "#006d38", "on-secondary-fixed": "#00210d", "error-container": "#ffdad6", "surface-container-high": "#e4e8f6", "on-secondary-fixed-variant": "#005228", "on-primary-fixed-variant": "#2e476f", "inverse-on-surface": "#ecf0fe", "secondary-fixed": "#77fca3", "on-tertiary-fixed-variant": "#004e5f", "on-surface": "#171c25", "surface-container-highest": "#dee2f0", "surface-bright": "#f9f9ff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-dim": "#d6dae7", "on-secondary": "#ffffff", "primary-container": "#1b365d", "on-error-container": "#93000a", "surface-tint": "#465f88", "secondary-container": "#74f9a0", "tertiary-fixed-dim": "#4cd6fb", "surface-container-lowest": "#ffffff", "on-background": "#171c25", "primary-fixed": "#d6e3ff", "primary-fixed-dim": "#aec7f7", "outline": "#74777f", "on-primary-container": "#87a0cd", "primary": "#002046", "tertiary-fixed": "#b3ebff", "outline-variant": "#c4c6cf", "on-tertiary-container": "#00adcf" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-xl": "2.5rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "label-lg": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "headline-xl": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #1b365d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2o9GAep9dZdDVgdsdYhdOB_OKsd1gLU9WsX0GiUYyPYqKC2tg1un7lzQIJwmDzh8Gpi1adnuQCDFc8WpJXRLLCbEzpmgMMhE4RpReVjR_LCsSUSZNf_RlX7IAwU19cQRih5uQRDjoR3bVJZaZBqulwqsjQqltSqcW54PKll9J-KnFTmVAP4uRUN6R8WctBDqnJ9JVAMnvF7enEjOjq-38JtToYn4WQtLNTP707LDW6EMTyT0DnFxgRFM9"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary leading-none">SmartCharge</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Tanzania e-MSP</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">EWURA 2026 SWITCH: ONLINE (99.4% SLO)</span></div></div><nav class="hidden lg:flex items-center bg-surface-container-low p-1 rounded-xl" data-active-classes="bg-primary text-on-primary font-headline-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] rounded-xl"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary text-on-primary font-headline-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] rounded-xl" data-path="driver-portal" href="#">Driver Customer PWA</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="station-locator" href="#">Station Locator</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="tariff-schedule" href="#">Tariffs &amp; Regulatory</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end"><span class="font-label-sm text-label-sm text-secondary font-bold">M-PESA / TIGO TILL ACTIVE</span><span class="font-label-sm text-label-sm text-on-surface-variant">USSD Fast-Handshake #</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="max-w-[1440px] mx-auto px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Driver Fleet & Telemetry Summary Hero -->
+<section class="relative w-full rounded-xl bg-gradient-to-r from-primary via-primary-container to-primary text-on-primary p-space-lg md:p-space-xl shadow-lg overflow-hidden mb-space-lg">
+<!-- Ambient circuit pattern / decorative glow -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-64 h-64 rounded-full bg-tertiary-fixed/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Vehicle Identification -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-lg bg-surface-container-low/20 backdrop-blur-sm text-secondary-fixed text-label-sm font-label-sm font-bold uppercase tracking-wider">
+            Commercial Fleet ID
+          </span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim">EWURA Reg #TZ-E26</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[28px]">electric_rickshaw</span>
+</div>
+<div>
+<h1 class="font-headline-lg text-headline-lg text-surface-bright leading-tight">Bajaj RE EV</h1>
+<p class="font-label-lg text-label-lg text-primary-fixed tracking-wide">T 482 DXC • Micro-Fleet</p>
+</div>
+</div>
+<div class="mt-space-xs flex items-center gap-space-sm bg-surface-container-low/10 p-2.5 rounded-xl border-none">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">pin_drop</span>
+<div class="text-body-sm font-body-sm text-primary-fixed-dim truncate">
+            Current Hub: <span class="text-surface-bright font-semibold">Mwenge Sub-Grid 04</span>
+</div>
+</div>
+</div>
+<!-- Center Live State of Charge Telemetry -->
+<div class="lg:col-span-5 flex flex-col sm:flex-row items-center justify-center gap-space-lg bg-surface-container-lowest/5 p-space-md rounded-xl backdrop-blur-sm">
+<!-- Circular Radial Gauge (Strictly % and Distance, NO kWh) -->
+<div class="relative w-32 h-32 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container-highest/20" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-secondary transition-all duration-700 ease-out" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-dasharray="314.15" stroke-dashoffset="182.2" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-lg text-headline-lg text-surface-bright leading-none">42<span class="text-headline-md font-headline-md text-secondary-fixed">%</span></span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider mt-0.5">SoC Level</span>
+</div>
+</div>
+<!-- Metric Readout Stack -->
+<div class="flex flex-col gap-space-xs w-full sm:w-auto">
+<div class="flex items-center justify-between sm:justify-start gap-space-md">
+<span class="font-label-md text-label-md text-primary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">route</span>
+              Estimated Range:
+            </span>
+<span class="font-headline-md text-headline-md text-surface-bright">38 km</span>
+</div>
+<div class="flex items-center justify-between sm:justify-start gap-space-md">
+<span class="font-label-md text-label-md text-primary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">thermostat</span>
+              Cell Pack Temp:
+            </span>
+<span class="font-label-lg text-label-lg text-tertiary-fixed-dim font-bold">31.4°C (Nominal)</span>
+</div>
+<div class="flex items-center justify-between sm:justify-start gap-space-md">
+<span class="font-label-md text-label-md text-primary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">bolt</span>
+              Swapping Dock Ready:
+            </span>
+<span class="font-label-sm text-label-sm bg-secondary/30 text-secondary-fixed px-2 py-0.5 rounded font-bold">Ready (4 Pcs)</span>
+</div>
+</div>
+</div>
+<!-- Right Driver Quick Balance & Emergency Action -->
+<div class="lg:col-span-3 flex flex-col justify-between h-full gap-space-md bg-surface-container-low/10 p-space-md rounded-xl">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase">SmartCharge Driver Purse</span>
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">account_balance_wallet</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-surface-bright mt-1">18,400 <span class="text-body-md font-body-md text-secondary-fixed">TZS</span></div>
+<p class="font-label-sm text-label-sm text-primary-fixed-dim">Instant Lipa Namba linked</p>
+</div>
+<div class="flex gap-space-xs">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 text-surface-bright text-label-md font-label-md transition-colors flex items-center justify-center gap-1" onclick="document.getElementById('wallet-drawer').scrollIntoView({ behavior: 'smooth' })">
+<span class="material-symbols-outlined text-[16px]">add_card</span>
+            Top-up
+          </button>
+<a class="flex-1 py-2 px-3 rounded-lg bg-secondary hover:bg-secondary-fixed text-on-primary hover:text-on-secondary-fixed text-label-md font-label-md font-bold transition-colors flex items-center justify-center gap-1" href="#booking-panel">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+            Start Now
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 Core Charging Journeys (Highlight Cards) -->
+<section class="w-full mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Mission-Critical Charging Paths</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Select Driver Charging Journey</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:inline">Strict Golden Metric: Battery % &amp; TZS Only</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Journey 1: Standard Direct Charge -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between border-t-4 border-t-secondary cursor-pointer" onclick="selectJourney('standard', 2268, '40% to 100% Direct Charge')">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Delta Dynamic %</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">power</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-space-xs">Standard Direct Charge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pay only for target percentage gain. Ideal for scheduled lunch or roadside rest stops.</p>
+<div class="my-space-md p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span>Selected Delta:</span>
+<span class="font-label-md font-bold text-primary">40% → 100% (+60%)</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span>Standard Cost:</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">2,268 TZS</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2">
+<span>Configure Percentage</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Journey 2: Premium Direct Charge -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between border-t-4 border-t-tertiary-container cursor-pointer" onclick="selectJourney('premium', 5000, 'Flat Full Charge to 100%')">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Priority Flat Rate</span>
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">offline_bolt</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-space-xs">Premium Direct Charge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flat-rate to 100% full battery with auto priority grid saturation cut-off (&lt;50W standby safeguard).</p>
+<div class="my-space-md p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span>Target Level:</span>
+<span class="font-label-md font-bold text-primary">100% Guaranteed Full</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span>Flat Price:</span>
+<span class="font-headline-md text-headline-md text-tertiary-container font-bold">5,000 TZS</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2">
+<span>Choose Flat Charge</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Journey 3: Instant Battery Swapping -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between border-t-4 border-t-primary cursor-pointer" onclick="selectJourney('swap', 5140, '2-Min Battery Swap 20% to 100%')">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">2-Minute Swap</span>
+<span class="material-symbols-outlined text-primary text-[24px]">published_with_changes</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-space-xs">Instant Battery Swapping</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero wait time for Bajaj tricycles and EV pikipiki. Hand in depleted pack, get fresh pack instantly.</p>
+<div class="my-space-md p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span>Depleted Pack Handover:</span>
+<span class="font-label-md font-bold text-primary">20% → 100% Fresh</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span>Swap Fee:</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">5,140 TZS</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-secondary hover:bg-secondary-fixed text-on-secondary hover:text-on-secondary-fixed font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2">
+<span>Reserve Swapping Dock</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Grid: Station Map & Live Configuration Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg items-start">
+<!-- Left: Dar es Salaam Station Locator Hub -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Dar es Salaam Station Locator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 Certified EWURA Fast-Charge Hubs</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">SCADA 1-Sec Telemetry</span>
+</div>
+</div>
+<!-- Simulated Interactive Map Component -->
+<div class="w-full h-72 bg-cover bg-center rounded-xl relative overflow-hidden flex flex-col justify-between p-space-md shadow-inner" data-location="Dar es Salaam, Tanzania" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzWAYesl_EaVjhVZzqpHg7jYU1tFCRn2lDhxMwzKD52nOZYH4h80Y1E2Rh6xXx3_iX-W67CMOqCdOz-mCjtGYxvOcLvCT9RnbwBcokD1Z9U7_2wOcN19v7PXXk3g24IltbMYyyMus-r3g4c1AMqxlhcwo1TT0PpSawTGHcApLyeP0VqQARA83FIl2gTGsbFdNNdUcDxRvD-aKA5ovRE6nXCr9Q3aHHuLBHbaKkUe3NGrCpeRX_uSqa3Q')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<!-- Top map filters overlay -->
+<div class="relative z-10 flex flex-wrap gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm font-bold shadow-sm backdrop-blur-md">Dar Metro Area</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-sm">Free Bays Only</span>
+</div>
+<!-- Pinned Visual Stations in Dar es Salaam -->
+<div class="relative z-10 grid grid-cols-2 sm:grid-cols-4 gap-2">
+<!-- Pin 1 -->
+<button class="p-2 rounded-lg bg-surface-container-lowest/95 shadow-md text-left hover:scale-[1.02] transition-transform" onclick="pickStation('Mwenge Bus Terminal #1088', 'Ready (3 Bays Free)', 'Mwenge Terminal Gate 2')">
+<div class="flex items-center gap-1 text-secondary font-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Mwenge #1088
+              </div>
+<div class="font-label-sm text-on-surface-variant truncate">0.6 km • Available</div>
+</button>
+<!-- Pin 2 -->
+<button class="p-2 rounded-lg bg-surface-container-lowest/95 shadow-md text-left hover:scale-[1.02] transition-transform" onclick="pickStation('Kariakoo Market Hub #1042', 'High Demand (1 Bay)', 'Kariakoo Msimbazi St')">
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                Kariakoo #1042
+              </div>
+<div class="font-label-sm text-on-surface-variant truncate">3.2 km • 1 Bay Free</div>
+</button>
+<!-- Pin 3 -->
+<button class="p-2 rounded-lg bg-surface-container-lowest/95 shadow-md text-left hover:scale-[1.02] transition-transform" onclick="pickStation('Kijitonyama Agent #1001', 'Swapping Ready', 'Ali Hassan Mwinyi Rd')">
+<div class="flex items-center gap-1 text-primary font-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Kijitonyama #1001
+              </div>
+<div class="font-label-sm text-on-surface-variant truncate">1.8 km • Swaps Ready</div>
+</button>
+<!-- Pin 4 -->
+<button class="p-2 rounded-lg bg-surface-container-lowest/95 shadow-md text-left hover:scale-[1.02] transition-transform" onclick="pickStation('Posta City Centre #1015', 'Charging In Progress', 'Samora Avenue')">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                Posta #1015
+              </div>
+<div class="font-label-sm text-on-surface-variant truncate">5.1 km • In Use</div>
+</button>
+</div>
+</div>
+<!-- Station Detail Accordion List -->
+<div class="mt-space-md space-y-space-xs">
+<!-- Station Card 1: Mwenge -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">ev_station</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md font-bold text-primary" id="currentStationTitle">Mwenge Bus Terminal Hub #1088</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Available</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Gate 02, BRT Terminus • 3 Direct AC/DC Guns + 6 Swapping Bays</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm font-bold whitespace-nowrap transition-colors flex items-center justify-center gap-1" onclick="reserveBay('Mwenge Bus Terminal #1088')">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+              Hold Bay (15 Mins)
+            </button>
+</div>
+<!-- Station Card 2: Kariakoo -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/15 text-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">ev_station</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md font-bold text-primary">Kariakoo Market Hub #1042</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">1 Gun In-Use</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Msimbazi Street Commercial Yard • High-speed Boda/Bajaj Bay</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-surface-variant text-primary font-label-sm text-label-sm font-bold whitespace-nowrap transition-colors flex items-center justify-center gap-1" onclick="reserveBay('Kariakoo Market Hub #1042')">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+              Hold Bay (15 Mins)
+            </button>
+</div>
+<!-- Station Card 3: Kijitonyama -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">swap_horizontal_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md font-bold text-primary">Kijitonyama Agent Hub #1001</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Battery Swap Hub</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Science Rd &amp; Mwinyi Junction • 8 Packs Charged &amp; Calibrated</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-secondary hover:bg-secondary-fixed text-on-secondary hover:text-on-secondary-fixed font-label-sm text-label-sm font-bold whitespace-nowrap transition-colors flex items-center justify-center gap-1" onclick="reserveBay('Kijitonyama Agent Hub #1001')">
+<span class="material-symbols-outlined text-[16px]">battery_saver</span>
+              Reserve Swap Pack
+            </button>
+</div>
+</div>
+<!-- Reservation Feedback Banner (hidden until triggered) -->
+<div class="mt-space-sm p-3 rounded-lg bg-secondary-container text-on-secondary-container hidden items-center justify-between" id="reservationAlert">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-body-sm font-semibold" id="reservationText">Bay held at Mwenge for 15 minutes. Reservation code: SC-8831</span>
+</div>
+<span class="font-label-sm font-bold">Expires in 14:58</span>
+</div>
+</div>
+</div>
+<!-- Right: Multi-Step Interactive Charging Configurator & Lipa Namba Trigger -->
+<div class="lg:col-span-5 flex flex-col gap-space-md" id="booking-panel">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Step 2: Session Setup</span>
+<h3 class="font-headline-md text-headline-md text-primary">Charging Configuration</h3>
+</div>
+<img alt="SmartCharge Tanzania Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2o9GAep9dZdDVgdsdYhdOB_OKsd1gLU9WsX0GiUYyPYqKC2tg1un7lzQIJwmDzh8Gpi1adnuQCDFc8WpJXRLLCbEzpmgMMhE4RpReVjR_LCsSUSZNf_RlX7IAwU19cQRih5uQRDjoR3bVJZaZBqulwqsjQqltSqcW54PKll9J-KnFTmVAP4uRUN6R8WctBDqnJ9JVAMnvF7enEjOjq-38JtToYn4WQtLNTP707LDW6EMTyT0DnFxgRFM9"/>
+</div>
+<!-- Mode Tab Selection -->
+<div class="flex rounded-xl bg-surface-container-low p-1 mb-space-md">
+<button class="flex-1 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold transition-all text-center" id="tab-standard" onclick="setMode('standard')">
+            Direct %
+          </button>
+<button class="flex-1 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all text-center" id="tab-premium" onclick="setMode('premium')">
+            Full Flat
+          </button>
+<button class="flex-1 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all text-center" id="tab-swap" onclick="setMode('swap')">
+            Swap
+          </button>
+</div>
+<!-- Target Battery Percentage Selector (Golden Rule: Strict % and TZS, No kWh) -->
+<div class="mb-space-md" id="percentageConfigSection">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Starting Battery SoC:</span>
+<span class="font-label-md text-label-md font-bold text-primary">42% (Current Pack)</span>
+</div>
+<div class="flex justify-between items-center mb-2">
+<span class="font-body-sm text-body-sm text-on-surface">Target Charge Percentage:</span>
+<span class="font-headline-md text-headline-md text-secondary" id="targetPercentageLabel">100% Full</span>
+</div>
+<!-- Interactive Quick Presets -->
+<div class="grid grid-cols-3 gap-space-xs mb-space-sm">
+<button class="py-2 rounded-lg bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface font-semibold text-center transition-colors" id="btn-p60" onclick="setTargetPercent(60)">
+              60% (+18%)
+            </button>
+<button class="py-2 rounded-lg bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface font-semibold text-center transition-colors" id="btn-p80" onclick="setTargetPercent(80)">
+              80% (+38%)
+            </button>
+<button class="py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center transition-colors" id="btn-p100" onclick="setTargetPercent(100)">
+              100% Full (+58%)
+            </button>
+</div>
+<input class="w-full accent-secondary h-2 bg-surface-container-high rounded-lg cursor-pointer" id="sliderPercent" max="100" min="50" oninput="onSliderChange(this.value)" step="5" type="range" value="100"/>
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span>50% Min</span>
+<span>75% Optimal</span>
+<span>100% Max Range</span>
+</div>
+</div>
+<!-- Live Price & Time Calculator Block (Hardware Spec Inset Bezels) -->
+<div class="rounded-xl bg-inverse-surface text-inverse-on-surface p-space-md mb-space-md">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-primary-fixed-dim uppercase tracking-wider mb-2">
+<span>Dynamic EWURA Formula</span>
+<span class="flex items-center gap-1 text-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+              Auto-Calculated
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-space-md items-center">
+<div>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Amount to Pay:</span>
+<div class="font-headline-lg text-headline-lg text-secondary-fixed tracking-tight" id="calculatedPrice">
+                2,268 <span class="font-label-md text-label-md">TZS</span>
+</div>
+</div>
+<div>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">Est. Time to Target:</span>
+<div class="font-headline-lg text-headline-lg text-surface-bright tracking-tight" id="calculatedTime">
+                54 <span class="font-label-md text-label-md">Mins</span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs text-label-sm font-label-sm text-primary-fixed-dim flex items-center justify-between">
+<span>Automatic Standby Cut-Off: &lt;50W</span>
+<span class="text-secondary-fixed font-bold">100% Saturation Safe</span>
+</div>
+</div>
+<!-- Lipa Namba & Mobile Money Payment Handshake -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Lipa Namba Payment Channel</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Instant USSD Handshake</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">
+                LN
+              </div>
+<div>
+<div class="font-label-md font-bold text-primary">Lipa Namba: 123456</div>
+<div class="font-label-sm text-on-surface-variant">Merchant: SmartCharge HQ - EWURA 2026</div>
+</div>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container text-label-sm font-label-sm font-semibold flex items-center gap-1 shadow-sm" onclick="navigator.clipboard &amp;&amp; navigator.clipboard.writeText('123456'); alert('Lipa Namba 123456 Copied!');">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+              Copy
+            </button>
+</div>
+<!-- M-Pesa / Tigo / Airtel Fast USSD Action Buttons -->
+<div class="grid grid-cols-3 gap-space-xs mt-1">
+<a class="py-2 px-1 rounded-lg bg-error-container hover:bg-error/20 text-on-error-container font-label-sm text-label-sm font-bold text-center flex flex-col items-center" href="tel:*150*00%23">
+<span>M-Pesa USSD</span>
+<span class="text-[10px] font-normal">*150*00#</span>
+</a>
+<a class="py-2 px-1 rounded-lg bg-tertiary-fixed hover:bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm text-label-sm font-bold text-center flex flex-col items-center" href="tel:*150*01%23">
+<span>Tigo Pesa</span>
+<span class="text-[10px] font-normal">*150*01#</span>
+</a>
+<a class="py-2 px-1 rounded-lg bg-surface-container-highest hover:bg-surface-variant text-primary font-label-sm text-label-sm font-bold text-center flex flex-col items-center" href="tel:*150*60%23">
+<span>Airtel Money</span>
+<span class="text-[10px] font-normal">*150*60#</span>
+</a>
+</div>
+</div>
+<!-- Authorize Session CTA Button -->
+<button class="w-full py-3.5 px-space-md rounded-xl bg-secondary hover:bg-secondary-fixed text-on-secondary hover:text-on-secondary-fixed font-headline-md text-headline-md font-bold shadow-md transition-all flex items-center justify-center gap-2" id="btnStartSession" onclick="startSimulatedSession()">
+<span class="material-symbols-outlined text-[24px]">power_settings_new</span>
+<span>Authorize Session • 2,268 TZS</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Live Session Telemetry Panel (Real-time charging state) -->
+<section class="w-full mb-space-lg" id="active-telemetry">
+<div class="bg-inverse-surface rounded-xl text-inverse-on-surface p-space-lg shadow-xl relative overflow-hidden">
+<!-- Glow ambient -->
+<div class="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Telemetry Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-none">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-secondary-fixed animate-ping"></div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase tracking-wider">Live Charging Telemetry</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright">Session Active: Gun #02 (Mwenge Terminal)</h3>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-3 py-1 rounded-full bg-secondary/20 text-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              SSR Closed | Zero-Crossing Active
+            </span>
+<span class="font-label-md text-label-md text-primary-fixed-dim">Session #SC-884920</span>
+</div>
+</div>
+<!-- Telemetry Dynamic Ring & Stats Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center">
+<!-- Live SoC Progress Circle -->
+<div class="md:col-span-4 flex flex-col items-center justify-center p-space-md bg-surface-container-lowest/5 rounded-xl">
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 140 140">
+<circle class="text-surface-container-highest/20" cx="70" cy="70" fill="transparent" r="58" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-secondary-fixed transition-all duration-1000 ease-linear" cx="70" cy="70" fill="transparent" id="telemetryRing" r="58" stroke="currentColor" stroke-dasharray="364.4" stroke-dashoffset="116.6" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-xl text-headline-xl text-surface-bright leading-none" id="telemetryPercentage">68<span class="text-headline-lg font-headline-lg text-secondary-fixed">%</span></span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider mt-1">Live Battery SoC</span>
+<span class="font-label-xs text-label-sm text-secondary-fixed font-semibold mt-0.5" id="telemetryRate">+1.2% / min</span>
+</div>
+</div>
+<div class="mt-3 text-body-sm font-body-sm text-primary-fixed-dim text-center">
+              Target: <span class="text-surface-bright font-bold">100% Full</span> (Remaining: 32%)
+            </div>
+</div>
+<!-- Telemetry Numerical Inset Bezels (STRICTLY NO KWH SHOWN TO DRIVER) -->
+<div class="md:col-span-5 grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Current Session Cost:</span>
+<div class="font-headline-md text-headline-md text-secondary-fixed mt-1" id="runningCost">1,542 TZS</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Cap: 2,268 TZS Max</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Elapsed Session Time:</span>
+<div class="font-headline-md text-headline-md text-surface-bright mt-1" id="elapsedTimer">28:44</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Est. 25 mins remaining</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Range Gained This Session:</span>
+<div class="font-headline-md text-headline-md text-tertiary-fixed-dim mt-1">+24.5 km</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Added to 38 km base</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/10">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Safety Cut-Off Guard:</span>
+<div class="font-headline-md text-headline-md text-secondary-fixed mt-1">ARMED</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Trips at 99.8% SoC</span>
+</div>
+</div>
+<!-- Direct Hardware Actions (Emergency Cut-Off & Digital Receipt Request) -->
+<div class="md:col-span-3 flex flex-col gap-space-sm justify-between h-full">
+<div class="p-3 rounded-xl bg-surface-container-lowest/5 text-label-sm font-label-sm text-primary-fixed-dim">
+<div class="font-bold text-surface-bright mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">verified_user</span>
+                EWURA Compliance
+              </div>
+              Mandated safety interlock active. Overvoltage &amp; thermal surge protection online.
+            </div>
+<div class="flex flex-col gap-2">
+<button class="w-full py-3 px-space-md rounded-xl bg-error hover:bg-on-error-container text-on-error font-label-lg text-label-lg font-bold tracking-wide transition-colors flex items-center justify-center gap-2 shadow-md" onclick="emergencyStop()">
+<span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+                EMERGENCY CUT-OFF
+              </button>
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-surface-bright font-label-md text-label-md transition-colors flex items-center justify-center gap-1" onclick="requestTaxReceipt()">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+                Request EWURA Digital Receipt
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Driver Wallet & EWURA Tax Receipt Center -->
+<section class="w-full mb-space-lg" id="wallet-drawer">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Wallet Management Panel -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Driver Account</span>
+<h3 class="font-headline-md text-headline-md text-primary">Prepaid Wallet &amp; Tills</h3>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">wallet</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Available Liquid Balance</span>
+<div class="font-headline-lg text-headline-lg text-primary">18,400 <span class="text-headline-md font-headline-md text-secondary">TZS</span></div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Auto-debit enabled for charging</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-colors" onclick="quickTopUp(5000)">
+            +5,000 TZS
+          </button>
+</div>
+<!-- Quick Top-up amount buttons -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Fast Reload via Mobile Money</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold text-center transition-colors" onclick="quickTopUp(2000)">
+              +2,000 TZS
+            </button>
+<button class="py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold text-center transition-colors" onclick="quickTopUp(5000)">
+              +5,000 TZS
+            </button>
+<button class="py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold text-center transition-colors" onclick="quickTopUp(10000)">
+              +10,000 TZS
+            </button>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low/60 flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary">contactless</span>
+<div class="text-body-sm font-body-sm">
+            NFC Windshield Tag <span class="font-label-md font-bold text-primary">TZ-8849-NFC</span> active. Tap station reader for instant unlock.
+          </div>
+</div>
+</div>
+<!-- EWURA TRA Compliant Transaction Invoices List -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Official Fiscal Records</span>
+<h3 class="font-headline-md text-headline-md text-primary">EWURA / TRA Digital Invoices</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mandated under April 2026 Directive</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Receipt Row 1 (Latest completed session) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md font-bold text-primary">TXN-88492019</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">PAID TRA-QR</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Mwenge Bay #01 • 40% → 100% Full Charge • 14:20 Today</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-between sm:justify-end">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary font-bold">2,268 TZS</div>
+<div class="font-label-sm text-label-sm text-secondary">VAT 18% Incl.</div>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm transition-colors" onclick="downloadFiscalReceipt('TXN-88492019', '2,268 TZS')" title="Download Official PDF">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Receipt Row 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/15 text-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">swap_horiz</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md font-bold text-primary">TXN-87994112</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">SWAP PASS</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Kariakoo Hub #1042 • 20% Depleted Swapped • Yesterday</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-between sm:justify-end">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary font-bold">5,140 TZS</div>
+<div class="font-label-sm text-label-sm text-secondary">VAT 18% Incl.</div>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm transition-colors" onclick="downloadFiscalReceipt('TXN-87994112', '5,140 TZS')" title="Download Official PDF">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Receipt Row 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">flash_on</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md font-bold text-primary">TXN-86510344</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">FLAT PRIORITY</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Posta City Centre #1015 • 100% Saturation Cut-Off • 12 Apr 2026</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-between sm:justify-end">
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary font-bold">5,000 TZS</div>
+<div class="font-label-sm text-label-sm text-secondary">VAT 18% Incl.</div>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container shadow-sm transition-colors" onclick="downloadFiscalReceipt('TXN-86510344', '5,000 TZS')" title="Download Official PDF">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Offline / Field SMS & USSD Support Strip -->
+<section class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[26px]">cell_tower</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary leading-tight">No Internet at Charging Bay?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dial <span class="font-label-md font-bold text-primary">*152*00#</span> &gt; Option 7 (SmartCharge EV) to initiate session via 2G SMS GSM gateway.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" href="tel:*152*00%23">
+<span class="material-symbols-outlined text-[18px]">call</span>
+        Trigger 2G GSM Handshake
+      </a>
+</div>
+</section>
+<!-- Interactive Client-Side Logic Engine -->
+<script>
+    let currentMode = 'standard';
+    let targetPercent = 100;
+    const baseSoC = 42; // Driver's current pack SoC
+
+    function updateCalculations() {
+      const priceEl = document.getElementById('calculatedPrice');
+      const timeEl = document.getElementById('calculatedTime');
+      const ctaBtn = document.getElementById('btnStartSession');
+
+      if (currentMode === 'standard') {
+        const delta = Math.max(5, targetPercent - baseSoC);
+        // Golden rule strict formula: strictly % converted to TZS, NO kWh shown
+        // 58% delta = 2,268 TZS
+        const calculatedTzs = Math.round((delta / 58) * 2268);
+        const calculatedMinutes = Math.round((delta / 58) * 54);
+
+        priceEl.innerHTML = calculatedTzs.toLocaleString() + ' <span class="font-label-md text-label-md">TZS</span>';
+        timeEl.innerHTML = calculatedMinutes + ' <span class="font-label-md text-label-md">Mins</span>';
+        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">power_settings_new</span><span>Authorize Session &bull; ' + calculatedTzs.toLocaleString() + ' TZS</span>';
+      } else if (currentMode === 'premium') {
+        priceEl.innerHTML = '5,000 <span class="font-label-md text-label-md">TZS</span>';
+        timeEl.innerHTML = '42 <span class="font-label-md text-label-md">Mins</span>';
+        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">bolt</span><span>Authorize Full Flat &bull; 5,000 TZS</span>';
+      } else if (currentMode === 'swap') {
+        priceEl.innerHTML = '5,140 <span class="font-label-md text-label-md">TZS</span>';
+        timeEl.innerHTML = '2 <span class="font-label-md text-label-md">Mins</span>';
+        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">published_with_changes</span><span>Reserve Instant Swap &bull; 5,140 TZS</span>';
+      }
+    }
+
+    function setMode(mode) {
+      currentMode = mode;
+      const tabStandard = document.getElementById('tab-standard');
+      const tabPremium = document.getElementById('tab-premium');
+      const tabSwap = document.getElementById('tab-swap');
+      const percentageConfig = document.getElementById('percentageConfigSection');
+
+      // Reset styles
+      [tabStandard, tabPremium, tabSwap].forEach(btn => {
+        btn.className = "flex-1 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all text-center";
+      });
+
+      if (mode === 'standard') {
+        tabStandard.className = "flex-1 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold transition-all text-center";
+        percentageConfig.style.display = 'block';
+      } else if (mode === 'premium') {
+        tabPremium.className = "flex-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-label-md text-label-md font-bold transition-all text-center";
+        percentageConfig.style.display = 'none';
+      } else if (mode === 'swap') {
+        tabSwap.className = "flex-1 py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold transition-all text-center";
+        percentageConfig.style.display = 'none';
+      }
+      updateCalculations();
+    }
+
+    function selectJourney(mode, price, title) {
+      setMode(mode);
+      document.getElementById('booking-panel').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function setTargetPercent(val) {
+      targetPercent = parseInt(val, 10);
+      document.getElementById('sliderPercent').value = targetPercent;
+      document.getElementById('targetPercentageLabel').textContent = targetPercent + '% Full';
+
+      // Highlight active preset button
+      ['btn-p60', 'btn-p80', 'btn-p100'].forEach(id => {
+        const b = document.getElementById(id);
+        b.className = "py-2 rounded-lg bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface font-semibold text-center transition-colors";
+      });
+      const activeBtn = document.getElementById('btn-p' + val);
+      if (activeBtn) {
+        activeBtn.className = "py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center transition-colors";
+      }
+
+      updateCalculations();
+    }
+
+    function onSliderChange(val) {
+      targetPercent = parseInt(val, 10);
+      document.getElementById('targetPercentageLabel').textContent = targetPercent + '% Full';
+      updateCalculations();
+    }
+
+    function pickStation(name, status, address) {
+      document.getElementById('currentStationTitle').textContent = name;
+      alert('Selected Hub: ' + name + ' (' + status + ')');
+    }
+
+    function reserveBay(stationName) {
+      const banner = document.getElementById('reservationAlert');
+      const text = document.getElementById('reservationText');
+      text.textContent = 'Bay confirmed & held at ' + stationName + ' for 15 minutes. Reservation Token #SC-4491.';
+      banner.classList.remove('hidden');
+      banner.classList.add('flex');
+    }
+
+    function startSimulatedSession() {
+      const telemetrySection = document.getElementById('active-telemetry');
+      telemetrySection.scrollIntoView({ behavior: 'smooth' });
+      alert('Handshake OK! Gun engaged with vehicle T 482 DXC. Zero-crossing SSR energized.');
+    }
+
+    function emergencyStop() {
+      if (confirm('EMERGENCY CUT-OFF: Disconnect high-voltage contactor immediately?')) {
+        const ring = document.getElementById('telemetryRing');
+        ring.classList.remove('text-secondary-fixed');
+        ring.classList.add('text-error');
+        alert('EMERGENCY CUT-OFF ACTIVATED: Contactor Opened. Session Terminated safely. TRA receipt queued.');
+      }
+    }
+
+    function requestTaxReceipt() {
+      alert('EWURA & TRA Tax Receipt #TXN-88492020 generated with valid QR code! Sent via SMS to registered driver SIM.');
+    }
+
+    function quickTopUp(amount) {
+      alert('USSD Prompt Sent to Driver SIM (*150*00#). Complete PIN verification to credit ' + amount.toLocaleString() + ' TZS to SmartCharge Purse.');
+    }
+
+    function downloadFiscalReceipt(txn, amount) {
+      alert('Downloading TRA Fiscal Electronic Invoice for ' + txn + ' (' + amount + ')... Verified by EWURA April 2026 Mandate.');
+    }
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-[1440px] mx-auto px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-headline-md text-headline-md text-primary">Reliance Solutions &amp; Technology (T) Ltd.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Certified e-MSP Infrastructure Provider under EWURA Mandate April 2026</span></div><div class="flex items-center gap-space-lg"><span class="font-label-md text-label-md text-on-surface-variant">2G SMS+AI Gateway: Active</span><span class="font-label-md text-label-md text-on-surface-variant">Dar es Salaam Switch Node 01</span></div></div></footer></body></html>

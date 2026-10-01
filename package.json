@@ -1,0 +1,23 @@
+{
+  "name": "smartcharge-ecosystem",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Frontend + backend application for the SmartCharge Tanzania e-mobility ecosystem portals",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"node server.js\" \"vite --host 0.0.0.0 --port 5173\"",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.0.1",
+    "vite": "^5.4.10"
+  }
+}

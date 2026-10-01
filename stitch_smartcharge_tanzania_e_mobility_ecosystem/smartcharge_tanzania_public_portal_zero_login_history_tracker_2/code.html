@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>SmartCharge Tanzania - Public Infrastructure Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "primary": "#002046", "inverse-primary": "#aec7f7", "on-primary-fixed-variant": "#2e476f", "surface-bright": "#f9f9ff", "inverse-surface": "#2b303b", "tertiary-fixed": "#b3ebff", "on-background": "#171c25", "on-secondary-fixed": "#00210d", "surface-dim": "#d6dae7", "on-secondary": "#ffffff", "surface-container-high": "#e4e8f6", "on-primary-container": "#87a0cd", "on-primary": "#ffffff", "on-primary-fixed": "#001b3d", "tertiary-container": "#003b49", "background": "#f9f9ff", "inverse-on-surface": "#ecf0fe", "primary-container": "#1b365d", "primary-fixed-dim": "#aec7f7", "secondary": "#006d38", "on-tertiary-fixed": "#001f27", "surface-container-low": "#f0f3ff", "on-error": "#ffffff", "on-secondary-container": "#00723a", "surface-tint": "#465f88", "outline": "#74777f", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#004e5f", "on-tertiary-container": "#00adcf", "primary-fixed": "#d6e3ff", "on-secondary-fixed-variant": "#005228", "on-surface": "#171c25", "secondary-fixed-dim": "#59df89", "surface-variant": "#dee2f0", "surface": "#f9f9ff", "secondary-fixed": "#77fca3", "on-tertiary": "#ffffff", "outline-variant": "#c4c6cf", "secondary-container": "#74f9a0", "surface-container-highest": "#dee2f0", "on-surface-variant": "#44474e", "tertiary": "#00242d", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#4cd6fb", "error": "#ba1a1a", "surface-container": "#e9eefc" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-desktop": "2rem", "space-md": "1rem", "gutter-tablet": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-tablet": "2rem", "margin": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin-desktop": "3rem" }, "fontFamily": { "body-sm": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ], "label-sm": [ "JetBrains Mono" ], "label-lg": [ "JetBrains Mono" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "JetBrains Mono" ], "body-md": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ] }, "fontSize": { "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-md": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop h-10 flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-secondary-container animate-pulse"></span><span class="uppercase tracking-wider text-on-primary">Ecosystem Portals</span><span class="text-on-primary-container hidden sm:inline">|</span><span class="text-on-primary-container hidden sm:inline">EWURA Compliance April 2026 Mandate</span></div><div class="flex items-center gap-space-md"><a class="text-on-primary-container hover:text-on-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[14px]">admin_panel_settings</span><span class="hidden md:inline">HQ Admin &amp; EWURA Compliance</span><span class="md:hidden">HQ Admin</span></a><a class="text-on-primary-container hover:text-on-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[14px]">point_of_sale</span><span class="hidden md:inline">Station Agent Box</span><span class="md:hidden">Agent</span></a><a class="text-on-primary-container hover:text-on-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[14px]">electric_scooter</span><span class="hidden md:inline">Driver PWA Experience</span><span class="md:hidden">Driver</span></a><a class="text-on-primary-container hover:text-on-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[14px]">account_tree</span><span class="hidden lg:inline">Architecture Blueprint</span><span class="lg:hidden">Blueprint</span></a></div></div></div><div class="h-16 bg-surface/95 backdrop-blur-xl border-b border-surface-variant/40"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop h-full flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #1b365d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2o9GAep9dZdDVgdsdYhdOB_OKsd1gLU9WsX0GiUYyPYqKC2tg1un7lzQIJwmDzh8Gpi1adnuQCDFc8WpJXRLLCbEzpmgMMhE4RpReVjR_LCsSUSZNf_RlX7IAwU19cQRih5uQRDjoR3bVJZaZBqulwqsjQqltSqcW54PKll9J-KnFTmVAP4uRUN6R8WctBDqnJ9JVAMnvF7enEjOjq-38JtToYn4WQtLNTP707LDW6EMTyT0DnFxgRFM9"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">SmartCharge</span><span class="font-label-sm text-label-sm text-secondary uppercase leading-tight">Tanzania EV Network</span></div></div><nav class="hidden lg:flex items-center gap-space-sm p-space-xs rounded-lg" data-active-classes="bg-surface-container-high text-primary font-semibold"><a aria-current="page" class="px-space-md py-space-xs rounded transition-colors bg-surface-container-high text-primary font-semibold" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="px-space-md py-space-xs rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="px-space-md py-space-xs rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-charging-points" href="#">Our Charging Points</a><a class="px-space-md py-space-xs rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="track-history" href="#">Track History</a><a class="px-space-md py-space-xs rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-us" href="#">Contact Us</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs bg-secondary hover:bg-on-secondary-container text-on-secondary px-space-md py-space-sm rounded-lg font-label-md text-label-md uppercase tracking-wider shadow-sm transition-all" data-path="track-charging-swaps" href="#"><span class="material-symbols-outlined text-[16px]">electric_bolt</span>Track Charging &amp; Swaps</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-[104px] bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Top Ecosystem Quick-Switch Pill Bar -->
+<section class="w-full bg-surface-container-high py-space-sm px-margin md:px-margin-tablet lg:px-margin-desktop shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Tanzania Unified E-Mobility Ecosystem</span>
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-space-xs rounded ml-space-xs">v2.6 SCADA</span>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-primary rounded shadow-sm font-label-sm text-label-sm flex items-center gap-1 transition-all" onclick="openEcosystemModal('hq')">
+<span class="material-symbols-outlined text-[14px]">shield</span> HQ Admin &amp; EWURA
+        </button>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-primary rounded shadow-sm font-label-sm text-label-sm flex items-center gap-1 transition-all" onclick="openEcosystemModal('agent')">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span> Station Agent Box
+        </button>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-primary rounded shadow-sm font-label-sm text-label-sm flex items-center gap-1 transition-all" onclick="openEcosystemModal('driver')">
+<span class="material-symbols-outlined text-[14px]">electric_scooter</span> Driver PWA App
+        </button>
+<button class="px-space-sm py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-primary rounded shadow-sm font-label-sm text-label-sm flex items-center gap-1 transition-all" onclick="openEcosystemModal('blueprint')">
+<span class="material-symbols-outlined text-[14px]">schema</span> Architecture Blueprint
+        </button>
+<button class="px-space-sm py-space-xs bg-secondary text-on-secondary hover:bg-on-secondary-container rounded shadow-sm font-label-sm text-label-sm flex items-center gap-1 transition-all font-semibold" onclick="openEcosystemModal('all')">
+<span class="material-symbols-outlined text-[14px]">apps</span> System Map
+        </button>
+</div>
+</div>
+</section>
+<!-- Hero Section with Live Telemetry SCADA -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute left-10 -bottom-20 w-80 h-80 bg-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-highest px-space-sm py-space-xs rounded-full">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-primary uppercase">Regulated Under EWURA Act Cap 414 • Apr 2026 Mandate</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+          Accelerating Tanzania's E-Mobility with <span class="text-secondary underline decoration-secondary-container decoration-wavy">Instant Charging</span> &amp; Battery Swaps
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          National critical infrastructure linking TANESCO's clean grid to 100,000+ boda-bodas, bajajis, and urban commercial electric fleets. Real-time telemetry, offline 2G SMS survivability, and automated mobile money settling across all 31 administrative regions.
+        </p>
+<!-- National Impact Stat Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Stations</div>
+<div class="font-headline-lg text-headline-lg text-primary mt-1">124<span class="text-secondary text-[20px] font-normal">+</span></div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">sensors</span> 100% Live
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Grid Uptime</div>
+<div class="font-headline-lg text-headline-lg text-primary mt-1">99.8<span class="text-[18px]">%</span></div>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">bolt</span> TANESCO Intertie
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Swaps Completed</div>
+<div class="font-headline-lg text-headline-lg text-primary mt-1">14.3<span class="text-[18px]">k</span></div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">cycle</span> 48s avg swap
+            </div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">National Mandate</div>
+<div class="font-headline-lg text-headline-lg text-secondary mt-1">APR 26</div>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified_user</span> #EWURA-088
+            </div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="bg-secondary hover:bg-on-secondary-container text-on-secondary px-space-md py-space-sm rounded-lg font-label-md text-label-md uppercase tracking-wider flex items-center gap-space-xs shadow-md transition-all" href="#driver-portal">
+<span class="material-symbols-outlined text-[18px]">person_pin_circle</span> Instant Driver Lookup
+          </a>
+<a class="bg-surface-container-highest hover:bg-surface-variant text-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md uppercase tracking-wider flex items-center gap-space-xs shadow-sm transition-all" href="#charging-hubs">
+<span class="material-symbols-outlined text-[18px]">map</span> Find Nearest Kiosk
+          </a>
+</div>
+</div>
+<!-- Live SCADA Telemetry Unit -->
+<div class="lg:col-span-5">
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm bg-primary-container/40 -mx-space-md -mt-space-md px-space-md pt-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold text-tertiary-fixed">SCADA Node #DAR-042</span>
+</div>
+<span class="bg-secondary px-space-xs py-0.5 rounded text-on-secondary font-label-sm text-label-sm">BAGAMOYO CORRIDOR</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Hardware Sensor OLED Block -->
+<div class="bg-[#0F172A] p-space-sm rounded-lg shadow-inner">
+<div class="flex items-center justify-between text-surface-variant font-label-sm text-label-sm pb-1">
+<span>PHASE 3 FEED TELEMETRY</span>
+<span class="text-tertiary-fixed" id="scada-latency">PING: 14ms (Airtel IoT)</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center py-1">
+<div class="bg-primary-container/30 p-1.5 rounded">
+<div class="text-[10px] text-surface-variant font-label-sm">VOLTAGE</div>
+<div class="font-label-lg text-label-lg text-secondary-container" id="scada-voltage">412.4 V</div>
+</div>
+<div class="bg-primary-container/30 p-1.5 rounded">
+<div class="text-[10px] text-surface-variant font-label-sm">FREQ</div>
+<div class="font-label-lg text-label-lg text-tertiary-fixed" id="scada-freq">50.08 Hz</div>
+</div>
+<div class="bg-primary-container/30 p-1.5 rounded">
+<div class="text-[10px] text-surface-variant font-label-sm">DRAW</div>
+<div class="font-label-lg text-label-lg text-on-primary" id="scada-current">128.6 A</div>
+</div>
+</div>
+</div>
+<!-- Active Bay Battery Status -->
+<div class="bg-primary-container/50 p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-primary font-label-sm text-label-sm mb-2">
+<span>SWAP BAY 01 • NMC-60V LITHIUM PACKS</span>
+<span class="text-secondary-fixed">8/8 SLOTS READY</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5">
+<div class="bg-[#0F172A] p-1.5 rounded text-center">
+<div class="text-[9px] font-label-sm text-surface-variant">BAY A</div>
+<div class="text-[11px] font-label-md font-bold text-secondary-container">98%</div>
+<div class="w-full bg-surface-variant/20 h-1 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary-container h-full w-[98%]"></div>
+</div>
+</div>
+<div class="bg-[#0F172A] p-1.5 rounded text-center">
+<div class="text-[9px] font-label-sm text-surface-variant">BAY B</div>
+<div class="text-[11px] font-label-md font-bold text-secondary-container">100%</div>
+<div class="w-full bg-surface-variant/20 h-1 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary-container h-full w-full"></div>
+</div>
+</div>
+<div class="bg-[#0F172A] p-1.5 rounded text-center">
+<div class="text-[9px] font-label-sm text-surface-variant">BAY C</div>
+<div class="text-[11px] font-label-md font-bold text-tertiary-fixed">87%</div>
+<div class="w-full bg-surface-variant/20 h-1 rounded-full mt-1 overflow-hidden">
+<div class="bg-tertiary-fixed h-full w-[87%]"></div>
+</div>
+</div>
+<div class="bg-[#0F172A] p-1.5 rounded text-center">
+<div class="text-[9px] font-label-sm text-surface-variant">BAY D</div>
+<div class="text-[11px] font-label-md font-bold text-secondary-container">99%</div>
+<div class="w-full bg-surface-variant/20 h-1 rounded-full mt-1 overflow-hidden">
+<div class="bg-secondary-container h-full w-[99%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- DC Fast Gun Direct Telemetry -->
+<div class="flex items-center justify-between bg-primary-container/40 p-space-sm rounded-lg text-body-sm text-surface-bright">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">ev_station</span>
+<div>
+<div class="font-semibold">CCS2 60kW Gun #1</div>
+<div class="text-[11px] text-surface-variant">Occupied • TZS 378/10% SoC</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-bold text-secondary-container">74% Charged</div>
+<div class="text-[10px] font-label-sm text-surface-variant">11.4 kWh injected</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="font-label-sm text-label-sm text-on-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Hardware Encrypted SCADA-OCPI
+              </div>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-primary hover:bg-tertiary-fixed rounded font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-all" id="ping-btn" onclick="pingScadaNode()">
+<span class="material-symbols-outlined text-[14px]">refresh</span> Ping Node
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Zero-Login Driver Portal (Core Public Interaction) -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface" id="driver-portal">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-1 bg-secondary-container/20 text-secondary font-label-sm text-label-sm px-space-sm py-space-xs rounded-full uppercase mb-2">
+<span class="material-symbols-outlined text-[14px]">flash_on</span> Universal Instant Access
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Zero-Login Driver Portal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">No password, no app install. Query your real-time kilowatt balance, recent battery swaps, and officially validated EWURA tax receipts using your registered mobile number or vehicle registration tag.</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Integrated with TRA EFD • EWURA National Clearing</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tigo Pesa • M-Pesa • Airtel Money</span>
+</div>
+</div>
+<!-- Instant Profile Load Pills (1-click testing) -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Quick Sample Profiles (Click to test):</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Demo Sandbox Mode Active</span>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-space-md py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-on-surface rounded-lg shadow-sm font-label-md text-label-md flex items-center gap-space-xs transition-all" onclick="loadSampleProfile('juma')">
+<span class="material-symbols-outlined text-secondary text-[16px]">electric_moped</span>
+<span>Juma Athumani (+255 712 345 678)</span>
+<span class="text-[11px] bg-surface-container-high px-1.5 py-0.5 rounded text-primary">Bajaj RE • T 419 EAA</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-on-surface rounded-lg shadow-sm font-label-md text-label-md flex items-center gap-space-xs transition-all" onclick="loadSampleProfile('hamisi')">
+<span class="material-symbols-outlined text-secondary text-[16px]">two_wheeler</span>
+<span>Hamisi Selemani (+255 754 882 109)</span>
+<span class="text-[11px] bg-surface-container-high px-1.5 py-0.5 rounded text-primary">Pikipiki MC • MC 821 DTX</span>
+</button>
+<button class="px-space-md py-space-xs bg-surface-container-lowest hover:bg-primary hover:text-on-primary text-on-surface rounded-lg shadow-sm font-label-md text-label-md flex items-center gap-space-xs transition-all" onclick="loadSampleProfile('baraka')">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_shipping</span>
+<span>Baraka Mwamba (+255 784 991 223)</span>
+<span class="text-[11px] bg-surface-container-high px-1.5 py-0.5 rounded text-primary">City Fleet Van • T 902 EKG</span>
+</button>
+</div>
+<!-- Manual Lookup Form -->
+<div class="pt-space-xs grid grid-cols-1 sm:grid-cols-12 gap-space-sm items-center">
+<div class="sm:col-span-5 relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline text-[18px]">phone_android</span>
+<input class="w-full bg-surface-container-lowest pl-10 pr-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="driver-input-phone" placeholder="Mobile (+255 7XX XXX XXX or 07XXXXXXXX)" type="text" value="+255 712 345 678"/>
+</div>
+<div class="sm:col-span-4 relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline text-[18px]">badge</span>
+<input class="w-full bg-surface-container-lowest pl-10 pr-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="driver-input-plate" placeholder="Vehicle Plate (e.g. T 419 EAA)" type="text" value="T 419 EAA"/>
+</div>
+<div class="sm:col-span-3">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-space-sm px-space-md rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-space-xs shadow-md transition-all" id="search-btn" onclick="queryDriverProfile()">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span>Retrieve Logs</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dynamic Driver Profile Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-md" id="driver-profile-card">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md bg-surface-container-low/50 -mx-space-lg -mt-space-lg px-space-lg pt-space-lg rounded-t-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-md font-bold text-[22px]" id="driver-initials">
+              JA
+            </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary" id="driver-name">Juma Athumani</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" title="EWURA Registered Driver">verified</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase" id="driver-status">ACTIVE OPERATOR</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-sm mt-0.5">
+<span id="driver-phone">+255 712 345 678</span> • 
+                <span class="bg-surface-container-high text-primary px-1 rounded font-bold" id="driver-plate">T 419 EAA</span> •
+                <span id="driver-type">Bajaj Electric Passenger RE</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant">PRIMARY HUB</div>
+<div class="font-label-md text-label-md font-semibold text-primary" id="driver-hub">Kariakoo Market Hub #1042</div>
+</div>
+<button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-space-md py-space-sm rounded-lg font-label-md text-label-md font-semibold uppercase flex items-center gap-1 shadow-sm transition-all" onclick="triggerSimulatedTopup()">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span> Quick Top-up
+            </button>
+</div>
+</div>
+<!-- Telemetry Balance Tickers -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Prepaid Energy Balance</div>
+<div class="font-headline-lg text-headline-lg text-secondary mt-1 font-mono" id="driver-kwh">18.4 <span class="text-[16px] text-on-surface">kWh</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Est. 92 km remaining range</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Lifetime Battery Swaps</div>
+<div class="font-headline-lg text-headline-lg text-primary mt-1 font-mono" id="driver-swaps">84 <span class="text-[16px] text-on-surface">Swaps</span></div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">100% Health verified</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">This Month Spend</div>
+<div class="font-headline-lg text-headline-lg text-primary mt-1 font-mono" id="driver-spent">43,200 <span class="text-[14px] text-on-surface">TZS</span></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Saved ~65,000 TZS vs Petrol</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">EWURA Tax Compliance</div>
+<div class="font-headline-lg text-headline-lg text-secondary mt-1 flex items-center gap-1">
+              100% <span class="material-symbols-outlined text-secondary text-[24px]">task_alt</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">TRA EFD receipts active</div>
+</div>
+</div>
+<!-- Filterable Transaction Logs Table -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm font-semibold transition-all" id="tab-all" onclick="filterLogs('all')">All Records</button>
+<button class="px-space-sm py-1 bg-surface-container-high text-primary hover:bg-surface-container-highest rounded font-label-sm text-label-sm font-semibold transition-all" id="tab-swap" onclick="filterLogs('swap')">Battery Swaps</button>
+<button class="px-space-sm py-1 bg-surface-container-high text-primary hover:bg-surface-container-highest rounded font-label-sm text-label-sm font-semibold transition-all" id="tab-charge" onclick="filterLogs('charge')">Direct AC/DC</button>
+</div>
+<div class="relative w-full sm:w-64">
+<span class="absolute left-2.5 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline text-[16px]">search</span>
+<input class="w-full bg-surface-container-low pl-8 pr-3 py-1 rounded text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="log-search" onkeyup="searchLogs()" placeholder="Filter station or ref..." type="text"/>
+</div>
+</div>
+<div class="overflow-x-auto rounded-lg shadow-inner">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high font-label-sm text-label-sm text-primary uppercase">
+<tr>
+<th class="p-space-sm">Date &amp; Time</th>
+<th class="p-space-sm">Station &amp; Corridor</th>
+<th class="p-space-sm">Operation</th>
+<th class="p-space-sm">Energy/Qty</th>
+<th class="p-space-sm">Billed (TZS)</th>
+<th class="p-space-sm">Payment Method</th>
+<th class="p-space-sm text-right">Official Receipt</th>
+</tr>
+</thead>
+<tbody class="bg-surface-container-lowest" id="logs-tbody">
+<!-- Injected via JavaScript -->
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Infrastructure Section -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="max-w-2xl space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Tanzania Regulatory Tariff Schedule</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Standardized E-Mobility Utility Rates</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Approved by EWURA under the National E-Mobility Framework. Zero surcharge on interoperable mobile wallets with instant micro-clearing.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Service 1: Direct AC Fast Charge -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">ev_station</span>
+</div>
+<div class="inline-block bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Direct Cable Plug</div>
+<h3 class="font-headline-md text-headline-md text-primary">Rapid AC/DC Charging</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Type 2, CCS2 &amp; GB/T standard guns for passenger electric cars, commercial e-vans, and bajajis equipped with onboard OBCs.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">REGULATED TARIFF</div>
+<div class="font-headline-md text-headline-md text-primary font-mono mt-0.5">378 TZS <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 10% SoC</span></div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">Direct TANESCO feed intertie</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="text-primary hover:text-secondary font-label-md text-label-md uppercase flex items-center gap-1 font-semibold" href="#charging-hubs">
+              View DC Fast Locations <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 2: Instant Battery Swapping -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary text-on-secondary font-label-sm text-label-sm px-3 py-1 rounded-bl-lg font-semibold uppercase">
+            Fastest Option
+          </div>
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">battery_charging_full</span>
+</div>
+<div class="inline-block bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Swap in Under 60s</div>
+<h3 class="font-headline-md text-headline-md text-primary">Boda &amp; Bajaj Battery Swap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Drop off depleted 60V/72V intelligent lithium packs, insert your token or scan QR, and unlock a fully balanced 100% charged battery.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">REGULATED TARIFF</div>
+<div class="font-headline-md text-headline-md text-primary font-mono mt-0.5">5,140 TZS <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ Pack Swap</span></div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">Includes cell degradation warranty</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="text-secondary hover:text-on-secondary-container font-label-md text-label-md uppercase flex items-center gap-1 font-semibold" onclick="loadSampleProfile('hamisi')">
+              Test Pikipiki Swap Log <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Service 3: Micro-Franchise Station Agent Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">storefront</span>
+</div>
+<div class="inline-block bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Micro-Franchise</div>
+<h3 class="font-headline-md text-headline-md text-primary">Station Agent Box (Franchise)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Empowering local retail shops and fuel kiosk operators with automated edge hardware, live agent commission payouts, and hardware diagnostics.
+            </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-label-sm text-label-sm text-on-surface-variant">REVENUE SPLIT MODEL</div>
+<div class="font-headline-md text-headline-md text-primary font-mono mt-0.5">90 / 10 % <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">Auto-settled</span></div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">Direct M-Pesa agent commission</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="text-primary hover:text-secondary font-label-md text-label-md uppercase flex items-center gap-1 font-semibold" href="#contact-inquiry">
+              Apply For Franchise Kiosk <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Charging Points (Live Hub Directory & Interactive Map) -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface" id="charging-hubs">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Real-Time Dar es Salaam Grid</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Active Hubs &amp; Battery Swap Terminals</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Click on any station card or map pin to inspect live bay occupancy, voltage telemetry, and instant USSD queue reservation.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4 Hubs Synchronized (OCPI 2.2.1)</span>
+</div>
+</div>
+<!-- Map & Hub List Split Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Interactive Map Container -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden min-h-[420px]">
+<div class="flex items-center justify-between pb-space-sm relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+<span class="font-label-md text-label-md font-bold text-primary uppercase">Dar es Salaam Metropolitan Node Map</span>
+</div>
+<span class="bg-surface-container-lowest px-space-xs py-1 rounded font-label-sm text-label-sm text-on-surface-variant shadow-sm">Grid: TANESCO Region 1</span>
+</div>
+<!-- Stylized Interactive Map Graphic Canvas -->
+<div class="relative w-full h-[320px] bg-primary rounded-lg overflow-hidden shadow-inner my-space-xs">
+<!-- Stylized Coastline Vector Overlay -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<path d="M 0,180 Q 80,140 160,200 T 320,180 T 480,240 T 640,190 L 640,360 L 0,360 Z" fill="#4cd6fb"></path>
+<path d="M 20,40 Q 150,90 280,30 T 500,70" fill="none" stroke="#aec7f7" stroke-dasharray="4 4" stroke-width="2"></path>
+<path d="M 100,0 Q 120,160 220,220 T 420,320" fill="none" stroke="#aec7f7" stroke-dasharray="4 4" stroke-width="2"></path>
+</svg>
+<!-- Map Pins -->
+<!-- Pin 1: Kariakoo -->
+<button class="absolute top-[48%] left-[44%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none" onclick="openStationModal('kariakoo')">
+<div class="flex flex-col items-center">
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">flash_on</span> Kariakoo #1042
+                </span>
+<div class="w-3 h-3 bg-secondary rotate-45 -mt-1 shadow-md"></div>
+<div class="w-2 h-2 rounded-full bg-secondary-container animate-ping -mt-1"></div>
+</div>
+</button>
+<!-- Pin 2: Mwenge -->
+<button class="absolute top-[22%] left-[32%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none" onclick="openStationModal('mwenge')">
+<div class="flex flex-col items-center">
+<span class="bg-primary-container text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">ev_station</span> Mwenge #1088
+                </span>
+<div class="w-3 h-3 bg-primary-container rotate-45 -mt-1 shadow-md"></div>
+</div>
+</button>
+<!-- Pin 3: Posta / CBD -->
+<button class="absolute top-[62%] left-[64%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none" onclick="openStationModal('posta')">
+<div class="flex flex-col items-center">
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">battery_charging_full</span> Posta Port #1015
+                </span>
+<div class="w-3 h-3 bg-secondary rotate-45 -mt-1 shadow-md"></div>
+</div>
+</button>
+<!-- Pin 4: Kijitonyama -->
+<button class="absolute top-[36%] left-[52%] -translate-x-1/2 -translate-y-1/2 group focus:outline-none" onclick="openStationModal('kijitonyama')">
+<div class="flex flex-col items-center">
+<span class="bg-primary-container text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-md flex items-center gap-1 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[12px]">swap_horiz</span> Kijitonyama #1001
+                </span>
+<div class="w-3 h-3 bg-primary-container rotate-45 -mt-1 shadow-md"></div>
+</div>
+</button>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-secondary"></span> High Available Bays</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-primary-container"></span> Moderate Demand</span>
+</div>
+<span>Click any node pin to trigger remote diagnostics</span>
+</div>
+</div>
+<!-- Station Cards Directory -->
+<div class="lg:col-span-5 space-y-space-sm">
+<!-- Hub 1: Kariakoo -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all" onclick="openStationModal('kariakoo')">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[18px] text-primary font-bold">Kariakoo Market Hub</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold uppercase">#1042</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Msimbazi St, near BRT Central Interchange</div>
+</div>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Open 24/7</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-sm bg-surface-container-low p-space-xs rounded-lg text-center font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">BATTERIES</span>
+<span class="font-bold text-secondary text-label-md">14 Ready</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">CCS2 PLUGS</span>
+<span class="font-bold text-primary text-label-md">2 / 4 Free</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">VOLTAGE</span>
+<span class="font-bold text-primary font-mono text-label-md">414V</span>
+</div>
+</div>
+</div>
+<!-- Hub 2: Mwenge -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all" onclick="openStationModal('mwenge')">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[18px] text-primary font-bold">Mwenge Bus Terminal Hub</span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold uppercase">#1088</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Old Bagamoyo Rd, opposite Lorry Depot</div>
+</div>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Open 24/7</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-sm bg-surface-container-low p-space-xs rounded-lg text-center font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">BATTERIES</span>
+<span class="font-bold text-secondary text-label-md">22 Ready</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">CCS2 PLUGS</span>
+<span class="font-bold text-primary text-label-md">1 / 2 Free</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">VOLTAGE</span>
+<span class="font-bold text-primary font-mono text-label-md">410V</span>
+</div>
+</div>
+</div>
+<!-- Hub 3: Kijitonyama -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all" onclick="openStationModal('kijitonyama')">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[18px] text-primary font-bold">Kijitonyama COSTECH Hub</span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold uppercase">#1001</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ali Hassan Mwinyi Rd, Science Alley</div>
+</div>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Open 24/7</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-sm bg-surface-container-low p-space-xs rounded-lg text-center font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">BATTERIES</span>
+<span class="font-bold text-secondary text-label-md">8 Ready</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">CCS2 PLUGS</span>
+<span class="font-bold text-primary text-label-md">4 / 4 Free</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">VOLTAGE</span>
+<span class="font-bold text-primary font-mono text-label-md">415V</span>
+</div>
+</div>
+</div>
+<!-- Hub 4: Posta -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md cursor-pointer transition-all" onclick="openStationModal('posta')">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-[18px] text-primary font-bold">Posta Ferry &amp; Port Hub</span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold uppercase">#1015</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Sokoine Drive, Zanzibar Ferry Terminal</div>
+</div>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold uppercase">Open 24/7</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-sm bg-surface-container-low p-space-xs rounded-lg text-center font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">BATTERIES</span>
+<span class="font-bold text-secondary text-label-md">19 Ready</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">CCS2 PLUGS</span>
+<span class="font-bold text-primary text-label-md">3 / 4 Free</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-[10px]">VOLTAGE</span>
+<span class="font-bold text-primary font-mono text-label-md">412V</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us & Edge Architecture -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Resilient Engineering for African Grids</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Built by Reliance Solutions &amp; Technology (T) Ltd.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Conventional Western EV software collapses under intermittent tropical data connections and unstable sub-station brownouts. SmartCharge Tanzania implements an <strong>Edge-First Autonomous Protocol</strong>:
+        </p>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">signal_cellular_connected_no_internet_4_bar</span>
+<div>
+<h4 class="font-headline-md text-[16px] text-primary font-bold">2G / SMS Fallback Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stations store cryptographic charge signatures locally and execute token swaps over raw USSD/SMS fallback if 4G fiber drops.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">currency_exchange</span>
+<div>
+<h4 class="font-headline-md text-[16px] text-primary font-bold">Zero Cash Handling Mandate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">To eliminate theft and franchise friction, 100% of tariff payments clear through instant API handshakes with Vodacom M-Pesa, Airtel Money, and Tigo Pesa.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">policy</span>
+<div>
+<h4 class="font-headline-md text-[16px] text-primary font-bold">Institutional EWURA Clearing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct cryptographic SCADA intertie to the EWURA National Energy Inspectorate fulfilling the April 2026 E-Mobility Standard mandate.</p>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center justify-between">
+<span>Official Operator License: #EWURA/ESP-TZ-2026/088-CPO</span>
+<span class="text-tertiary-fixed font-bold">VERIFIED ACTIVE</span>
+</div>
+</div>
+<!-- Edge Architecture SCADA Visualizer Card -->
+<div class="lg:col-span-6">
+<div class="bg-primary text-on-primary rounded-xl p-space-lg shadow-xl space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-primary-container/40 -mx-space-lg -mt-space-lg px-space-lg pt-space-lg rounded-t-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">hub</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-surface-bright">High-Availability Telemetry Topology</span>
+</div>
+<span class="bg-secondary px-space-xs py-0.5 rounded text-on-secondary font-label-sm text-label-sm font-semibold">TANZANIA REGION</span>
+</div>
+<!-- Architecture SVG Pipeline -->
+<div class="bg-[#0F172A] p-space-md rounded-lg shadow-inner text-surface-variant font-label-sm text-label-sm space-y-space-sm">
+<div class="flex items-center justify-between text-tertiary-fixed font-mono text-[11px]">
+<span>[SUBSTATION FEED: 33kV]</span>
+<span>[STEP-DOWN: 400V 50Hz]</span>
+<span>[EDGE SCADA BOX]</span>
+</div>
+<div class="w-full bg-primary-container/40 h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full w-full animate-pulse"></div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center pt-space-xs">
+<div class="bg-primary/80 p-space-sm rounded">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">memory</span>
+<div class="font-bold text-on-primary mt-1">Dual-Core Cortex</div>
+<div class="text-[10px] text-surface-variant">Local SQLite DB</div>
+</div>
+<div class="bg-primary/80 p-space-sm rounded">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">sim_card</span>
+<div class="font-bold text-on-primary mt-1">Multi-Telco IoT</div>
+<div class="text-[10px] text-surface-variant">Dual-SIM Auto Failover</div>
+</div>
+<div class="bg-primary/80 p-space-sm rounded">
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">receipt_long</span>
+<div class="font-bold text-on-primary mt-1">TRA EFD Fiscal</div>
+<div class="text-[10px] text-surface-variant">Instant QR Signatures</div>
+</div>
+</div>
+</div>
+<div class="space-y-space-xs text-body-sm text-surface-variant">
+<div class="flex items-center justify-between">
+<span>National Grid Dispatch:</span>
+<span class="text-on-primary font-mono">TANESCO Kinyerezi Intertie</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Station Cryptography:</span>
+<span class="text-on-primary font-mono">TLS 1.3 + Hardware AES-256</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Compliance Certification:</span>
+<span class="text-secondary-fixed font-mono">TBS / EWURA / ISO 15118</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Contact & Station Inquiry Form -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">24/7 Operations &amp; Support</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Need Immediate Grid Support or Station Setup?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Whether you are an individual boda-boda rider experiencing bay lockup, a fleet logistics manager negotiating bulk tariffs, or a petrol station owner applying for our automated kiosk franchise.
+        </p>
+<!-- USSD Emergency Dialer Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center gap-space-xs text-error font-label-md text-label-md font-bold uppercase">
+<span class="material-symbols-outlined text-[20px]">e911_emergency</span>
+<span>Emergency Session Release USSD</span>
+</div>
+<div class="font-mono font-headline-md text-headline-md text-primary pt-1">*150*00# Option 7</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            In case of phone battery exhaustion or network outage at station, dial this free code on any feature phone to immediately terminate charging and pop your locked vehicle plug.
+          </p>
+</div>
+<div class="space-y-space-xs font-label-md text-label-md text-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span>Reliance Tower, 6th Fl, Plot 14, Ali Hassan Mwinyi Rd, Dar es Salaam</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+<span>Toll-Free Dispatch: 0800 75 00 24</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">mail</span>
+<span>dispatch@smartcharge.co.tz</span>
+</div>
+</div>
+</div>
+<!-- Form Box -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg rounded-xl shadow-md">
+<div class="space-y-space-md" id="contact-inquiry">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-high/60 -mx-space-lg -mt-space-lg px-space-lg pt-space-lg rounded-t-xl">
+<div class="font-headline-md text-[18px] text-primary font-bold">Public Portal Dispatch &amp; Franchise Inquiry</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded uppercase font-semibold">Real-Time Routing</span>
+</div>
+<form class="space-y-space-sm" id="public-inquiry-form" onsubmit="handleInquirySubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block">Your Full Name</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="form-name" placeholder="e.g. Fatma Kassim" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block">Mobile Number (Tanzania)</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="form-phone" placeholder="+255 7XX XXX XXX" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block">Inquiry Category</label>
+<select class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="form-category">
+<option value="driver">Driver Assistance / Locked Connector</option>
+<option value="franchise">Station Agent Box Franchise Application</option>
+<option value="fleet">Commercial Fleet Bulk Tariff Account</option>
+<option value="regulatory">EWURA Regulatory Inquiries</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block">Nearest Hub or Station ID</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="form-station" placeholder="e.g. Kariakoo Hub #1042" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block">Message / Incident Details</label>
+<textarea class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded-lg text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="form-message" placeholder="Describe your vehicle plate number, issue or proposed franchise property location..." required="" rows="3"></textarea>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Response via SMS confirmation ticket under 3 mins</span>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold uppercase tracking-wider flex items-center gap-space-xs shadow-md transition-all" id="form-submit-btn" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Transmit Ticket</span>
+</button>
+</div>
+</form>
+<!-- Inquiry Success Notification Banner (Hidden by default) -->
+<div class="hidden bg-secondary-container/30 p-space-md rounded-lg space-y-space-xs" id="inquiry-success-box">
+<div class="flex items-center gap-space-xs text-secondary font-bold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span id="ticket-ref-title">Ticket #TZ-8921 Transmitted Successfully</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface" id="ticket-ref-body">
+              An automated confirmation and dispatch technician SMS has been routed to your number. Dispatchers on shift have acknowledged your request.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ESC/POS Thermal Tax Receipt Modal (Digital Replica) -->
+<div class="fixed inset-0 z-50 bg-primary/80 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="receipt-modal">
+<div class="bg-[#FFFFF0] text-black w-full max-w-sm rounded-sm shadow-2xl p-space-md font-mono text-[12px] space-y-space-sm relative border-t-8 border-dashed border-primary">
+<button class="absolute top-2 right-2 text-black hover:text-error" onclick="closeReceiptModal()">
+<span class="material-symbols-outlined text-[22px]">cancel</span>
+</button>
+<div class="text-center space-y-0.5 pb-2 bg-surface-container-high/30 -mx-space-md -mt-space-md p-space-sm">
+<div class="font-bold text-[14px] uppercase tracking-wider">SMARTCHARGE TANZANIA LTD</div>
+<div class="text-[10px]">TIN: 142-890-112 • VRN: 40-023910-K</div>
+<div class="text-[10px]">EWURA LICENSED OPERATOR #EM-2026-088</div>
+<div class="text-[10px] font-bold">ELECTRONIC FISCAL DEVICE (EFD) RECEIPT</div>
+</div>
+<div class="space-y-1 text-[11px] pt-1">
+<div class="flex justify-between"><span>RECEIPT NO:</span><span class="font-bold" id="rcpt-num">TZ26-004921</span></div>
+<div class="flex justify-between"><span>DATE / TIME:</span><span id="rcpt-time">14-APR-2026 14:28:12</span></div>
+<div class="flex justify-between"><span>STATION HUB:</span><span id="rcpt-hub">KARIAKOO HUB #1042</span></div>
+<div class="flex justify-between"><span>VEHICLE PLATE:</span><span class="font-bold" id="rcpt-plate">T 419 EAA</span></div>
+<div class="flex justify-between"><span>DRIVER NAME:</span><span id="rcpt-driver">Juma Athumani</span></div>
+</div>
+<div class="my-2 border-b border-dashed border-black/60"></div>
+<div class="space-y-1 text-[11px]">
+<div class="flex justify-between font-bold">
+<span>ITEM DESCRIPTION</span>
+<span>AMOUNT (TZS)</span>
+</div>
+<div class="flex justify-between" id="rcpt-item-row">
+<span>NMC-60V SWAP (SOC 100%)</span>
+<span>5,140.00</span>
+</div>
+<div class="flex justify-between text-[10px] text-gray-700">
+<span>• ENERGY VALUE (1.8 kWh)</span>
+<span>3,800.00</span>
+</div>
+<div class="flex justify-between text-[10px] text-gray-700">
+<span>• CELL WEAR CONTRIBUTION</span>
+<span>1,340.00</span>
+</div>
+</div>
+<div class="my-2 border-b border-dashed border-black/60"></div>
+<div class="space-y-1 text-[11px]">
+<div class="flex justify-between font-bold text-[13px]">
+<span>TOTAL PAID (INCL VAT):</span>
+<span id="rcpt-total">5,140.00 TZS</span>
+</div>
+<div class="flex justify-between text-[10px]">
+<span>VAT (18% EXCL):</span>
+<span id="rcpt-vat">784.07 TZS</span>
+</div>
+<div class="flex justify-between text-[10px]">
+<span>PAYMENT METHOD:</span>
+<span id="rcpt-method">M-Pesa Express (TX# VP8921)</span>
+</div>
+</div>
+<!-- TRA Electronic Verification QR Code Box -->
+<div class="p-space-sm bg-black/5 rounded text-center space-y-1 my-2">
+<div class="w-24 h-24 mx-auto bg-black p-1 flex items-center justify-center text-white text-[8px] tracking-tighter">
+<!-- Stylized QR Code Mock -->
+<div class="grid grid-cols-4 gap-1 w-full h-full p-1 bg-white">
+<div class="bg-black"></div><div class="bg-black"></div><div class="bg-white"></div><div class="bg-black"></div>
+<div class="bg-black"></div><div class="bg-white"></div><div class="bg-black"></div><div class="bg-black"></div>
+<div class="bg-white"></div><div class="bg-black"></div><div class="bg-black"></div><div class="bg-white"></div>
+<div class="bg-black"></div><div class="bg-white"></div><div class="bg-black"></div><div class="bg-black"></div>
+</div>
+</div>
+<div class="text-[9px] font-bold">TRA FISCAL CODE VERIFIED: TR-990-2026-XQ</div>
+<div class="text-[8px] text-gray-600">Scan code with TRA EFD Verification App to confirm EWURA energy tax integrity</div>
+</div>
+<div class="flex gap-space-xs pt-1">
+<button class="flex-1 bg-black text-white py-1 text-center font-bold text-[11px] rounded flex items-center justify-center gap-1" onclick="window.print()">
+<span class="material-symbols-outlined text-[14px]">print</span> Print Thermal
+        </button>
+<button class="flex-1 bg-gray-200 text-black py-1 text-center font-bold text-[11px] rounded flex items-center justify-center gap-1" onclick="alert('Receipt downloaded as cryptographic PDF for vehicle tax records.')">
+<span class="material-symbols-outlined text-[14px]">download</span> PDF Save
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Ecosystem System Map Modal -->
+<div class="fixed inset-0 z-50 bg-primary/80 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="ecosystem-modal">
+<div class="bg-surface rounded-xl shadow-2xl w-full max-w-3xl max-h-[921px] overflow-y-auto p-space-lg space-y-space-md relative">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-high/50 -mx-space-lg -mt-space-lg px-space-lg pt-space-lg rounded-t-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">account_tree</span>
+<span class="font-headline-md text-[18px] text-primary font-bold">SmartCharge Tanzania Ecosystem Blueprint</span>
+</div>
+<button class="text-on-surface hover:text-error" onclick="closeEcosystemModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Surface Switcher Tabs inside modal -->
+<div class="flex flex-wrap gap-space-xs pb-space-xs">
+<button class="px-space-sm py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm font-semibold" id="modal-tab-all" onclick="switchModalTab('all')">Entire Matrix</button>
+<button class="px-space-sm py-1 bg-surface-container-high text-primary rounded font-label-sm text-label-sm font-semibold" id="modal-tab-hq" onclick="switchModalTab('hq')">1. HQ Admin &amp; EWURA</button>
+<button class="px-space-sm py-1 bg-surface-container-high text-primary rounded font-label-sm text-label-sm font-semibold" id="modal-tab-agent" onclick="switchModalTab('agent')">2. Station Agent Box</button>
+<button class="px-space-sm py-1 bg-surface-container-high text-primary rounded font-label-sm text-label-sm font-semibold" id="modal-tab-driver" onclick="switchModalTab('driver')">3. Driver PWA App</button>
+<button class="px-space-sm py-1 bg-surface-container-high text-primary rounded font-label-sm text-label-sm font-semibold" id="modal-tab-blueprint" onclick="switchModalTab('blueprint')">4. Architecture SCADA</button>
+</div>
+<div class="space-y-space-md" id="modal-tab-content">
+<!-- Default Content loaded via JS -->
+</div>
+</div>
+</div>
+<!-- Station Diagnostic Telemetry Modal -->
+<div class="fixed inset-0 z-50 bg-primary/80 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="station-modal">
+<div class="bg-surface rounded-xl shadow-2xl w-full max-w-2xl p-space-lg space-y-space-md relative">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-high/50 -mx-space-lg -mt-space-lg px-space-lg pt-space-lg rounded-t-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">sensors</span>
+<span class="font-headline-md text-[18px] text-primary font-bold" id="stn-modal-title">Kariakoo Market Hub #1042</span>
+</div>
+<button class="text-on-surface hover:text-error" onclick="closeStationModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md" id="stn-modal-content">
+<!-- Loaded dynamically -->
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Interactive Script (No External Dependencies) -->
+<script>
+  // Sample Driver Database
+  const driverData = {
+    juma: {
+      initials: "JA",
+      name: "Juma Athumani",
+      phone: "+255 712 345 678",
+      plate: "T 419 EAA",
+      type: "Bajaj Electric Passenger RE",
+      status: "ACTIVE OPERATOR",
+      hub: "Kariakoo Market Hub #1042",
+      kwh: "18.4",
+      swaps: 84,
+      spent: "43,200",
+      records: [
+        { id: "SWP-9021", date: "14-Apr-2026 14:28", hub: "Kariakoo Hub #1042", type: "swap", desc: "NMC-60V Pack Swap", energy: "1.8 kWh", amount: "5,140", method: "M-Pesa Express", vat: "784.07", receipt: "TZ26-004921" },
+        { id: "SWP-8994", date: "12-Apr-2026 09:15", hub: "Mwenge Bus Terminal #1088", type: "swap", desc: "NMC-60V Pack Swap", energy: "1.8 kWh", amount: "5,140", method: "Airtel Money", vat: "784.07", receipt: "TZ26-004812" },
+        { id: "CHG-3104", date: "09-Apr-2026 18:40", hub: "Kijitonyama Science #1001", type: "charge", desc: "Direct AC Plug (30% to 80%)", energy: "4.2 kWh", amount: "1,890", method: "Tigo Pesa", vat: "288.30", receipt: "TZ26-004655" },
+        { id: "SWP-8812", date: "07-Apr-2026 11:20", hub: "Kariakoo Hub #1042", type: "swap", desc: "NMC-60V Pack Swap", energy: "1.8 kWh", amount: "5,140", method: "M-Pesa Express", vat: "784.07", receipt: "TZ26-004319" }
+      ]
+    },
+    hamisi: {
+      initials: "HS",
+      name: "Hamisi Selemani",
+      phone: "+255 754 882 109",
+      plate: "MC 821 DTX",
+      type: "Pikipiki MC Courier Bodaboda",
+      status: "ACTIVE OPERATOR",
+      hub: "Mwenge Terminal Hub #1088",
+      kwh: "24.6",
+      swaps: 138,
+      spent: "72,800",
+      records: [
+        { id: "SWP-9144", date: "14-Apr-2026 13:10", hub: "Mwenge Bus Terminal #1088", type: "swap", desc: "72V Courier Battery Pack", energy: "2.1 kWh", amount: "5,140", method: "M-Pesa Express", vat: "784.07", receipt: "TZ26-005011" },
+        { id: "SWP-9080", date: "13-Apr-2026 16:50", hub: "Mwenge Bus Terminal #1088", type: "swap", desc: "72V Courier Battery Pack", energy: "2.1 kWh", amount: "5,140", method: "M-Pesa Express", vat: "784.07", receipt: "TZ26-004978" },
+        { id: "SWP-9011", date: "11-Apr-2026 08:30", hub: "Posta Port Hub #1015", type: "swap", desc: "72V Courier Battery Pack", energy: "2.1 kWh", amount: "5,140", method: "Tigo Pesa", vat: "784.07", receipt: "TZ26-004902" }
+      ]
+    },
+    baraka: {
+      initials: "BM",
+      name: "Baraka Mwamba",
+      phone: "+255 784 991 223",
+      plate: "T 902 EKG",
+      type: "Logistics City Van (Commercial Fleet)",
+      status: "FLEET CERTIFIED",
+      hub: "Posta Ferry & Port Hub #1015",
+      kwh: "86.0",
+      swaps: 12,
+      spent: "189,400",
+      records: [
+        { id: "CHG-3290", date: "14-Apr-2026 11:05", hub: "Posta Ferry & Port Hub #1015", type: "charge", desc: "CCS2 60kW DC Fast Charge (42 kWh)", energy: "42.0 kWh", amount: "15,876", method: "Fleet Master Account", vat: "2,421.76", receipt: "TZ26-005118" },
+        { id: "CHG-3211", date: "10-Apr-2026 17:45", hub: "Kijitonyama Science #1001", type: "charge", desc: "CCS2 60kW DC Fast Charge (38 kWh)", energy: "38.0 kWh", amount: "14,364", method: "Fleet Master Account", vat: "2,191.11", receipt: "TZ26-004780" },
+        { id: "CHG-3150", date: "06-Apr-2026 12:20", hub: "Mwenge Bus Terminal #1088", type: "charge", desc: "Type 2 Rapid AC (22 kWh)", energy: "22.0 kWh", amount: "8,316", method: "Fleet Master Account", vat: "1,268.54", receipt: "TZ26-004412" }
+      ]
+    }
+  };
+
+  let currentActiveDriver = 'juma';
+  let currentFilter = 'all';
+
+  // Render logs table
+  function renderLogs() {
+    const driver = driverData[currentActiveDriver];
+    const tbody = document.getElementById('logs-tbody');
+    const searchVal = (document.getElementById('log-search')?.value || '').toLowerCase();
+    
+    let filtered = driver.records.filter(r => {
+      if (currentFilter === 'swap' && r.type !== 'swap') return false;
+      if (currentFilter === 'charge' && r.type !== 'charge') return false;
+      if (searchVal && !r.hub.toLowerCase().includes(searchVal) && !r.id.toLowerCase().includes(searchVal) && !r.desc.toLowerCase().includes(searchVal)) return false;
+      return true;
+    });
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7" class="p-space-md text-center text-on-surface-variant font-label-sm">No transaction records match the filter criteria.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = filtered.map(row => `
+      <tr class="hover:bg-surface-container-low transition-colors">
+        <td class="p-space-sm font-mono text-[11px] text-on-surface-variant">${row.date}</td>
+        <td class="p-space-sm font-semibold text-primary">${row.hub}</td>
+        <td class="p-space-sm">
+          <span class="inline-flex items-center gap-1 ${row.type === 'swap' ? 'text-secondary font-bold' : 'text-primary font-bold'}">
+            <span class="material-symbols-outlined text-[16px]">${row.type === 'swap' ? 'swap_horiz' : 'bolt'}</span>
+            ${row.desc}
+          </span>
+        </td>
+        <td class="p-space-sm font-mono">${row.energy}</td>
+        <td class="p-space-sm font-mono font-bold text-primary">${row.amount} TZS</td>
+        <td class="p-space-sm">
+          <span class="bg-surface-container-high px-2 py-0.5 rounded font-label-sm text-label-sm text-primary">${row.method}</span>
+        </td>
+        <td class="p-space-sm text-right">
+          <button onclick="viewReceipt('${row.id}')" class="px-space-sm py-1 bg-surface-container-high hover:bg-primary hover:text-on-primary rounded font-label-sm text-label-sm font-semibold inline-flex items-center gap-1 transition-all">
+            <span class="material-symbols-outlined text-[14px]">receipt</span> ${row.receipt}
+          </button>
+        </td>
+      </tr>
+    `).join('');
+  }
+
+  // Load sample profile
+  function loadSampleProfile(key) {
+    currentActiveDriver = key;
+    const d = driverData[key];
+    document.getElementById('driver-initials').innerText = d.initials;
+    document.getElementById('driver-name').innerText = d.name;
+    document.getElementById('driver-phone').innerText = d.phone;
+    document.getElementById('driver-plate').innerText = d.plate;
+    document.getElementById('driver-type').innerText = d.type;
+    document.getElementById('driver-status').innerText = d.status;
+    document.getElementById('driver-hub').innerText = d.hub;
+    document.getElementById('driver-kwh').innerHTML = `${d.kwh} <span class="text-[16px] text-on-surface">kWh</span>`;
+    document.getElementById('driver-swaps').innerHTML = `${d.swaps} <span class="text-[16px] text-on-surface">Swaps</span>`;
+    document.getElementById('driver-spent').innerHTML = `${d.spent} <span class="text-[14px] text-on-surface">TZS</span>`;
+
+    // Fill inputs
+    document.getElementById('driver-input-phone').value = d.phone;
+    document.getElementById('driver-input-plate').value = d.plate;
+
+    filterLogs('all');
+  }
+
+  // Query Driver Profile simulated
+  function queryDriverProfile() {
+    const btn = document.getElementById('search-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> <span>Contacting EWURA Gateway...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+      // Cycle or retain profile
+      renderLogs();
+      const card = document.getElementById('driver-profile-card');
+      card.scrollIntoView({ behavior: 'smooth' });
+    }, 600);
+  }
+
+  // Filter logs
+  function filterLogs(type) {
+    currentFilter = type;
+    ['all', 'swap', 'charge'].forEach(t => {
+      const el = document.getElementById('tab-' + t);
+      if (t === type) {
+        el.className = "px-space-sm py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm font-semibold transition-all";
+      } else {
+        el.className = "px-space-sm py-1 bg-surface-container-high text-primary hover:bg-surface-container-highest rounded font-label-sm text-label-sm font-semibold transition-all";
+      }
+    });
+    renderLogs();
+  }
+
+  function searchLogs() {
+    renderLogs();
+  }
+
+  // View Receipt Modal
+  function viewReceipt(txId) {
+    const driver = driverData[currentActiveDriver];
+    const rec = driver.records.find(r => r.id === txId) || driver.records[0];
+
+    document.getElementById('rcpt-num').innerText = rec.receipt;
+    document.getElementById('rcpt-time').innerText = rec.date;
+    document.getElementById('rcpt-hub').innerText = rec.hub.toUpperCase();
+    document.getElementById('rcpt-plate').innerText = driver.plate;
+    document.getElementById('rcpt-driver').innerText = driver.name;
+    document.getElementById('rcpt-item-row').innerHTML = `<span>${rec.desc.toUpperCase()}</span><span>${rec.amount}.00</span>`;
+    document.getElementById('rcpt-total').innerText = `${rec.amount}.00 TZS`;
+    document.getElementById('rcpt-vat').innerText = `${rec.vat} TZS`;
+    document.getElementById('rcpt-method').innerText = rec.method;
+
+    document.getElementById('receipt-modal').classList.remove('hidden');
+  }
+
+  function closeReceiptModal() {
+    document.getElementById('receipt-modal').classList.add('hidden');
+  }
+
+  // Ecosystem Modal Switcher
+  function openEcosystemModal(tab = 'all') {
+    document.getElementById('ecosystem-modal').classList.remove('hidden');
+    switchModalTab(tab);
+  }
+
+  function closeEcosystemModal() {
+    document.getElementById('ecosystem-modal').classList.add('hidden');
+  }
+
+  function switchModalTab(tab) {
+    ['all', 'hq', 'agent', 'driver', 'blueprint'].forEach(t => {
+      const el = document.getElementById('modal-tab-' + t);
+      if (el) {
+        if (t === tab) {
+          el.className = "px-space-sm py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm font-semibold";
+        } else {
+          el.className = "px-space-sm py-1 bg-surface-container-high text-primary rounded font-label-sm text-label-sm font-semibold";
+        }
+      }
+    });
+
+    const contentBox = document.getElementById('modal-tab-content');
+    if (tab === 'hq') {
+      contentBox.innerHTML = `
+        <div class="space-y-space-sm">
+          <div class="bg-primary text-on-primary p-space-md rounded-lg">
+            <h3 class="font-headline-md text-headline-md text-tertiary-fixed">HQ Admin &amp; EWURA Compliance Surface</h3>
+            <p class="font-body-sm text-body-sm text-surface-variant mt-1">Supervisory platform for national regulators, grid engineers, and executive management. Monitors nationwide substation draws, tariff clearing, automated compliance filings, and blacklisted vehicle plates.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-space-sm">
+            <div class="bg-surface-container-low p-space-sm rounded">
+              <span class="font-bold text-primary block">EWURA Regulatory Audit</span>
+              <span class="text-[12px] text-on-surface-variant">Continuous SCADA data reporting mandated by April 2026 standards.</span>
+            </div>
+            <div class="bg-surface-container-low p-space-sm rounded">
+              <span class="font-bold text-primary block">National Revenue Clearing</span>
+              <span class="text-[12px] text-on-surface-variant">Direct mobile-money aggregation and automated TRA tax dispersal.</span>
+            </div>
+          </div>
+        </div>
+      `;
+    } else if (tab === 'agent') {
+      contentBox.innerHTML = `
+        <div class="space-y-space-sm">
+          <div class="bg-surface-container-highest p-space-md rounded-lg">
+            <h3 class="font-headline-md text-headline-md text-primary">Station Agent Box (Franchise Interface)</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Optimized for rugged 10-inch kiosk touchscreens operated by local retail franchisees. Handles physical token validation, cash-to-mobile conversion, and bay locker overrides.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-space-sm">
+            <div class="bg-surface-container-low p-space-sm rounded">
+              <span class="font-bold text-primary block">Instant 10% Agent Commission</span>
+              <span class="text-[12px] text-on-surface-variant">Live earnings ticker with one-touch payout to franchisee M-Pesa.</span>
+            </div>
+            <div class="bg-surface-container-low p-space-sm rounded">
+              <span class="font-bold text-primary block">Hardware Locker Health</span>
+              <span class="text-[12px] text-on-surface-variant">Slot temperature telemetry, BMS state verification, and door latch release.</span>
+            </div>
+          </div>
+        </div>
+      `;
+    } else if (tab === 'driver') {
+      contentBox.innerHTML = `
+        <div class="space-y-space-sm">
+          <div class="bg-secondary text-on-secondary p-space-md rounded-lg">
+            <h3 class="font-headline-md text-headline-md text-on-secondary">Driver Progressive Web App (PWA)</h3>
+            <p class="font-body-sm text-body-sm text-surface-container mt-1">Ultra-lightweight (sub-500KB) mobile web experience engineered for low-cost Android smartphones and high-glare tropical road conditions.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-space-sm">
+            <div class="bg-surface-container-low p-space-sm rounded">
+              <span class="font-bold text-primary block">Offline QR Token Generator</span>
+              <span class="text-[12px] text-on-surface-variant">Allows unlocking swap stations even when cellular data briefly disconnects.</span>
+            </div>
+            <div class="bg-surface-container-low p-space-sm rounded">
+              <span class="font-bold text-primary block">Real-time Hub Queue Radar</span>
+              <span class="text-[12px] text-on-surface-variant">Live battery count per station preventing empty trips across town.</span>
+            </div>
+          </div>
+        </div>
+      `;
+    } else if (tab === 'blueprint') {
+      contentBox.innerHTML = `
+        <div class="space-y-space-sm">
+          <div class="bg-primary text-on-primary p-space-md rounded-lg">
+            <h3 class="font-headline-md text-headline-md text-secondary-container">System Architecture &amp; Telemetry Blueprint</h3>
+            <p class="font-body-sm text-body-sm text-surface-variant mt-1">Complete technical schematic detailing OCPI 2.2.1 protocol integration, TANESCO grid interconnects, Edge SCADA microcontrollers, and multi-telco fallback routing.</p>
+          </div>
+          <div class="p-space-sm bg-surface-container-low rounded font-mono text-[11px] space-y-1">
+            <div class="text-primary font-bold">CORE TECH STACK:</div>
+            <div>&bull; Edge Nodes: ESP32 / Industrial Linux + SQLite + CanBUS 2.0</div>
+            <div>&bull; Cloud Engine: Go / Distributed Event Broker / OCPI 2.2.1 Gateway</div>
+            <div>&bull; Telco Handshake: Aggregated USSD Push &bull; Vodacom / Airtel / Tigo</div>
+          </div>
+        </div>
+      `;
+    } else {
+      contentBox.innerHTML = `
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+          <div onclick="switchModalTab('hq')" class="p-space-sm bg-surface-container-low hover:bg-surface-container-high rounded-lg cursor-pointer transition-all">
+            <div class="flex items-center gap-1 text-primary font-bold"><span class="material-symbols-outlined text-[16px]">shield</span> HQ Admin &amp; EWURA</div>
+            <p class="text-[12px] text-on-surface-variant mt-1">National regulatory compliance, grid load analysis, and automated audit logs.</p>
+          </div>
+          <div onclick="switchModalTab('agent')" class="p-space-sm bg-surface-container-low hover:bg-surface-container-high rounded-lg cursor-pointer transition-all">
+            <div class="flex items-center gap-1 text-primary font-bold"><span class="material-symbols-outlined text-[16px]">point_of_sale</span> Station Agent Box</div>
+            <p class="text-[12px] text-on-surface-variant mt-1">Micro-franchise kiosk touchscreens with instant commission payouts.</p>
+          </div>
+          <div onclick="switchModalTab('driver')" class="p-space-sm bg-surface-container-low hover:bg-surface-container-high rounded-lg cursor-pointer transition-all">
+            <div class="flex items-center gap-1 text-primary font-bold"><span class="material-symbols-outlined text-[16px]">electric_scooter</span> Driver PWA App</div>
+            <p class="text-[12px] text-on-surface-variant mt-1">Zero-login mobile interface, token storage, and station route finding.</p>
+          </div>
+          <div onclick="switchModalTab('blueprint')" class="p-space-sm bg-surface-container-low hover:bg-surface-container-high rounded-lg cursor-pointer transition-all">
+            <div class="flex items-center gap-1 text-primary font-bold"><span class="material-symbols-outlined text-[16px]">schema</span> Architecture Blueprint</div>
+            <p class="text-[12px] text-on-surface-variant mt-1">Hardware telemetry topology, 2G fallback specs, and OCPI documentation.</p>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  // Station Diagnostic Modal
+  const stationData = {
+    kariakoo: {
+      name: "Kariakoo Market Hub #1042",
+      address: "Msimbazi St, near BRT Central Interchange, Dar es Salaam",
+      batteriesReady: 14,
+      baysTotal: 16,
+      plugsAvailable: "2 of 4",
+      voltage: "414.2 V",
+      freq: "50.04 Hz",
+      draw: "142 A",
+      operator: "Msimbazi Green Energy Franchise Ltd."
+    },
+    mwenge: {
+      name: "Mwenge Bus Terminal Hub #1088",
+      address: "Old Bagamoyo Rd, opposite Lorry Freight Depot, Dar es Salaam",
+      batteriesReady: 22,
+      baysTotal: 24,
+      plugsAvailable: "1 of 2",
+      voltage: "410.8 V",
+      freq: "50.12 Hz",
+      draw: "98 A",
+      operator: "Mwenge Boda Cooperative &amp; Franchise"
+    },
+    kijitonyama: {
+      name: "Kijitonyama Science Hub #1001",
+      address: "Ali Hassan Mwinyi Rd, Science Innovation Alley, Dar es Salaam",
+      batteriesReady: 8,
+      baysTotal: 12,
+      plugsAvailable: "4 of 4",
+      voltage: "415.0 V",
+      freq: "49.98 Hz",
+      draw: "45 A",
+      operator: "COSTECH E-Innovation Center"
+    },
+    posta: {
+      name: "Posta Ferry & Port Hub #1015",
+      address: "Sokoine Drive, Zanzibar Ferry Terminal, Dar es Salaam",
+      batteriesReady: 19,
+      baysTotal: 20,
+      plugsAvailable: "3 of 4",
+      voltage: "412.1 V",
+      freq: "50.02 Hz",
+      draw: "164 A",
+      operator: "TPA Port Fleet &amp; SmartCharge Direct"
+    }
+  };
+
+  function openStationModal(key) {
+    const s = stationData[key] || stationData.kariakoo;
+    document.getElementById('stn-modal-title').innerHTML = s.name;
+    document.getElementById('stn-modal-content').innerHTML = `
+      <div class="space-y-space-sm">
+        <div class="p-space-sm bg-surface-container-low rounded-lg">
+          <div class="text-[12px] text-on-surface-variant font-label-sm">LOCATION & OPERATOR</div>
+          <div class="font-bold text-primary text-[15px]">${s.address}</div>
+          <div class="text-[12px] text-secondary font-semibold">Operator: ${s.operator}</div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-space-xs text-center">
+          <div class="bg-surface-container-high p-space-sm rounded">
+            <div class="text-[10px] text-on-surface-variant font-label-sm">READY BATTERIES</div>
+            <div class="font-bold text-secondary text-headline-md">${s.batteriesReady} <span class="text-[13px] text-on-surface font-normal">/ ${s.baysTotal}</span></div>
+          </div>
+          <div class="bg-surface-container-high p-space-sm rounded">
+            <div class="text-[10px] text-on-surface-variant font-label-sm">CCS2 DC PLUGS</div>
+            <div class="font-bold text-primary text-headline-md">${s.plugsAvailable}</div>
+          </div>
+          <div class="bg-surface-container-high p-space-sm rounded">
+            <div class="text-[10px] text-on-surface-variant font-label-sm">TELEMETRY FEED</div>
+            <div class="font-bold text-primary font-mono text-[16px] mt-1">${s.voltage}</div>
+          </div>
+        </div>
+
+        <div class="bg-[#0F172A] p-space-sm rounded-lg text-surface-variant font-mono text-[11px] space-y-1">
+          <div class="flex justify-between text-secondary-container">
+            <span>OCPI PROTOCOL STATUS:</span>
+            <span>CONNECTED (200 OK)</span>
+          </div>
+          <div class="flex justify-between">
+            <span>SUB-STATION LOAD:</span>
+            <span>${s.draw} &bull; ${s.freq}</span>
+          </div>
+          <div class="flex justify-between">
+            <span>USSD INSTANT PIN UNLOCK:</span>
+            <span>DIAL *150*00# &gt; 1042</span>
+          </div>
+        </div>
+
+        <div class="flex gap-space-sm pt-space-xs">
+          <button onclick="alert('Routing GPS navigation via Google Maps or Bajaj Nav...')" class="flex-1 bg-secondary text-on-secondary py-space-sm rounded-lg font-label-md text-label-md font-semibold uppercase flex items-center justify-center gap-1 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">directions</span> Start GPS Route
+          </button>
+          <button onclick="closeStationModal()" class="flex-1 bg-surface-container-high text-primary py-space-sm rounded-lg font-label-md text-label-md font-semibold uppercase">
+            Close
+          </button>
+        </div>
+      </div>
+    `;
+    document.getElementById('station-modal').classList.remove('hidden');
+  }
+
+  function closeStationModal() {
+    document.getElementById('station-modal').classList.add('hidden');
+  }
+
+  // Simulated Top-up Action
+  function triggerSimulatedTopup() {
+    const driver = driverData[currentActiveDriver];
+    const amount = prompt(`Initiate Instant Push Top-up for ${driver.name} (${driver.phone})?\nEnter TZS Amount (e.g. 10000):`, "10000");
+    if (amount) {
+      alert(`USSD STK Push Transmitted to ${driver.phone} via Mobile Money Gateway.\nPlease enter your M-Pesa / Tigo Pesa PIN on your mobile device to credit ${amount} TZS.`);
+    }
+  }
+
+  // Handle Contact / Incident Form
+  function handleInquirySubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('form-submit-btn');
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> Transmitting...`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">send</span> Transmit Ticket`;
+      btn.disabled = false;
+      document.getElementById('public-inquiry-form').reset();
+      const refBox = document.getElementById('inquiry-success-box');
+      refBox.classList.remove('hidden');
+      refBox.scrollIntoView({ behavior: 'smooth' });
+    }, 800);
+  }
+
+  // Ping SCADA Telemetry Node
+  function pingScadaNode() {
+    const btn = document.getElementById('ping-btn');
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[14px]">progress_activity</span>`;
+    setTimeout(() => {
+      // Fluctuate values slightly
+      const v = (410 + Math.random() * 4).toFixed(1);
+      const f = (50 + (Math.random() * 0.15 - 0.05)).toFixed(2);
+      const c = (125 + Math.random() * 8).toFixed(1);
+      const lat = Math.floor(12 + Math.random() * 8);
+
+      document.getElementById('scada-voltage').innerText = `${v} V`;
+      document.getElementById('scada-freq').innerText = `${f} Hz`;
+      document.getElementById('scada-current').innerText = `${c} A`;
+      document.getElementById('scada-latency').innerText = `PING: ${lat}ms (Airtel IoT)`;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[14px]">refresh</span> Ping Node`;
+    }, 400);
+  }
+
+  // Initialize view
+  document.addEventListener('DOMContentLoaded', () => {
+    loadSampleProfile('juma');
+    // Live voltage ticker background micro-simulation
+    setInterval(() => {
+      const voltEl = document.getElementById('scada-voltage');
+      if (voltEl) {
+        const base = 412 + (Math.random() * 1.6 - 0.8);
+        voltEl.innerText = `${base.toFixed(1)} V`;
+      }
+    }, 4000);
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-surface-variant/40"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #1b365d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V2o9GAep9dZdDVgdsdYhdOB_OKsd1gLU9WsX0GiUYyPYqKC2tg1un7lzQIJwmDzh8Gpi1adnuQCDFc8WpJXRLLCbEzpmgMMhE4RpReVjR_LCsSUSZNf_RlX7IAwU19cQRih5uQRDjoR3bVJZaZBqulwqsjQqltSqcW54PKll9J-KnFTmVAP4uRUN6R8WctBDqnJ9JVAMnvF7enEjOjq-38JtToYn4WQtLNTP707LDW6EMTyT0DnFxgRFM9"/><span class="font-headline-md text-headline-md text-primary tracking-tight">SmartCharge TZ</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">National EV Charging &amp; Battery Swap Infrastructure. Supervised by EWURA in accordance with the April 2026 National E-Mobility Standards.</p><div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-sm py-space-xs rounded font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span><span>Licensed E-Mobility Operator #EM-2026-088</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-md text-headline-md text-primary">Infrastructure &amp; Services</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Rapid DC Fast-Charging Stations</a></li><li><a class="hover:text-primary transition-colors" href="#">Boda-Boda Battery Swap Terminals</a></li><li><a class="hover:text-primary transition-colors" href="#">Commercial Fleet Bulk Kilowatt Accounts</a></li><li><a class="hover:text-primary transition-colors" href="#">TANESCO Grid Intertie Telemetry</a></li><li><a class="hover:text-primary transition-colors" href="#">Interoperable Roaming Protocol</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-md text-headline-md text-primary">Public &amp; Partner Links</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">EWURA Tariff Schedule &amp; Compliance</a></li><li><a class="hover:text-primary transition-colors" href="#">Franchise Kiosk Partner Program</a></li><li><a class="hover:text-primary transition-colors" href="#">Station Agent Onboarding Portal</a></li><li><a class="hover:text-primary transition-colors" href="#">System Status &amp; Realtime Grid Uptime</a></li><li><a class="hover:text-primary transition-colors" href="#">API Documentation &amp; OCPI 2.2.1 Specs</a></li></ul></div><div class="space-y-space-md"><div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm border border-surface-variant/60"><div class="flex items-center gap-space-xs text-error font-label-md text-label-md uppercase"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>24/7 National Dispatch</span></div><div class="mt-space-xs font-headline-md text-headline-md text-primary">*150*99#</div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Instant USSD Session Unlock, Station Grid Isolator Emergency, and Driver Roadside Assist across all mobile networks.</p></div><div class="font-label-sm text-label-sm text-on-surface-variant space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">call</span><span>Toll Free Hotline: 0800 75 00 24</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">mail</span><span>support@smartcharge.co.tz</span></div></div></div></div><div class="pt-space-md border-t border-surface-variant/40 flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div>© 2026 SmartCharge Tanzania Ltd. All rights reserved. Under EWURA E-Mobility Mandate.</div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" href="#">Whistleblower Policy</a><span class="text-secondary font-semibold">Dar es Salaam • Arusha • Dodoma • Mwanza</span></div></div></div></footer></body></html>
