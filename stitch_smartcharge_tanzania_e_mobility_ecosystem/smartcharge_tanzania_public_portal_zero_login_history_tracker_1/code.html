@@ -135,43 +135,47 @@
 <span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wide">Frictionless Driver Access</span>
 </div>
 <h2 class="font-headline-xl text-headline-xl text-primary font-bold mb-space-sm">
-          Instant Driver Portal — No Password or App Download Needed
+          Review a sample charging history
         </h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant">
-          Simply enter your registered Mobile Number or Email along with your Full Name to view your real-time charging sessions, battery swap logs, and official EWURA digital tax receipts.
+          Preview how charging sessions, battery swaps, and receipts are organized. This demonstration does not retrieve real customer records.
         </p>
 </div>
 <!-- Driver Retrieval Interactive Form -->
 <div class="max-w-3xl mx-auto bg-surface-container-lowest rounded-xl shadow-lg p-space-lg mb-space-xl">
-<form class="flex flex-col md:flex-row gap-space-md items-end" id="tracking-form" onsubmit="event.preventDefault(); document.getElementById('driver-results').classList.remove('hidden');">
+<form class="flex flex-col md:flex-row gap-space-md items-end" id="tracking-form" onsubmit="event.preventDefault(); document.getElementById('driver-results').classList.remove('hidden'); document.getElementById('demo-results-note').scrollIntoView({ behavior: 'smooth', block: 'center' });">
 <div class="w-full md:w-1/2 flex flex-col gap-1.5">
-<label class="font-label-sm text-label-sm font-semibold text-primary uppercase">Full Driver Name</label>
+<label class="font-label-sm text-label-sm font-semibold text-primary uppercase" for="sample-driver-name">Demo driver name</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-3 top-3 text-[18px] text-outline">person</span>
-<input class="w-full pl-10 pr-3 py-2.5 bg-surface-container-low rounded-lg text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="e.g. Juma Athumani" required="" type="text" value="Juma Athumani"/>
+<input class="w-full pl-10 pr-3 py-2.5 bg-surface-container-low rounded-lg text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="sample-driver-name" placeholder="Try: Juma Athumani" required="" type="text" autocomplete="off"/>
 </div>
 </div>
 <div class="w-full md:w-1/2 flex flex-col gap-1.5">
-<label class="font-label-sm text-label-sm font-semibold text-primary uppercase">Mobile (M-Pesa / Tigo) or Email</label>
+<label class="font-label-sm text-label-sm font-semibold text-primary uppercase" for="sample-driver-contact">Demo mobile or email</label>
 <div class="relative">
 <span class="material-symbols-outlined absolute left-3 top-3 text-[18px] text-outline">smartphone</span>
-<input class="w-full pl-10 pr-3 py-2.5 bg-surface-container-low rounded-lg text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="e.g. +255 712 345 678 / M-Pesa" required="" type="text" value="+255 712 345 678"/>
+<input class="w-full pl-10 pr-3 py-2.5 bg-surface-container-low rounded-lg text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="sample-driver-contact" placeholder="Try: +255 712 345 678" required="" type="text" autocomplete="off"/>
 </div>
 </div>
 <div class="w-full md:w-auto">
 <button class="w-full md:w-auto px-space-lg py-2.5 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-2 whitespace-nowrap" type="submit">
 <span class="material-symbols-outlined text-[20px] text-secondary-fixed">search_check</span>
-<span>Retrieve Logs</span>
+<span>Preview sample history</span>
 </button>
 </div>
 </form>
 <div class="mt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span>Encrypted under National Data Protection Act (TZ)</span>
-<span class="text-secondary font-semibold">Live Telemetry Sync: Connected</span>
+<span>This demo does not send or store the values you enter.</span>
+<span class="text-secondary font-semibold">Illustrative records only</span>
 </div>
 </div>
 <!-- Sample Results View (Rendered Driver Portal) -->
-<div class="flex flex-col gap-space-lg bg-surface-container-lowest rounded-xl shadow-lg p-space-lg lg:p-space-xl" id="driver-results">
+<div class="hidden flex-col gap-space-lg bg-surface-container-lowest rounded-xl shadow-lg p-space-lg lg:p-space-xl" id="driver-results">
+<div class="flex items-start gap-space-sm bg-tertiary-fixed/40 text-on-tertiary-fixed p-space-sm rounded-lg" id="demo-results-note" role="status">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>Sample profile preview only. No real account was searched and these transactions are illustrative.</span>
+</div>
 <!-- Driver Profile Header Banner -->
 <div class="p-space-md bg-surface-container-low rounded-xl flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
 <div class="flex items-center gap-space-md">

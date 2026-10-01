@@ -1,63 +1,68 @@
 import { useEffect, useState } from 'react';
-import { ArrowLeftRight, CheckCircle2, Gauge, Store, Zap } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Store, Zap } from 'lucide-react';
 
 const services = [
   {
-    id: 'billing',
+    id: 'driver',
     tone: 'primary',
-    Icon: Gauge,
-    eyebrow: 'Predictable Billing',
-    title: 'Standard Direct AC Charging',
+    Icon: Zap,
+    eyebrow: 'For drivers · start here',
+    title: 'Charge or swap your vehicle',
     description:
-      'Pay-As-You-Go battery percentage top-ups (40% to 100%). Clear, predictable percentage rates eliminate complex kWh math for drivers at the roadside.',
-    highlightLabel: 'Direct AC Tariff Cap',
-    highlightValue: '378 TZS per 10% SoC',
-    note: 'Regulated under EWURA 2026 Schedule B',
-    btnLabel: 'Open charging portal',
-    route: '/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1',
+      'Choose a direct percentage top-up, flat-rate charge, or battery swap. The next step shows hub options and an estimated amount before continuing.',
+    highlightLabel: 'Example direct charge',
+    highlightValue: '2,268 TZS',
+    note: 'Example only · choose a session type to see its estimate.',
+    btnLabel: 'Start a driver journey',
+    route: '/portal/client-driver-charging-pwa-experience',
+    secondaryLabel: 'Track a previous session',
+    secondaryRoute: '/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1',
     features: [
-      'Universal Type 2 & GB/T standard guns',
-      'Automated session cutoff to preserve cell lifespan',
-      'Instant SMS confirmation with TRA digital stamp',
+      'Select direct charge, full charge, or swap',
+      'Browse hubs and request a bay hold',
+      'Review sample payment and session steps',
     ],
   },
   {
-    id: 'swap',
+    id: 'station',
     tone: 'secondary',
-    Icon: ArrowLeftRight,
-    eyebrow: 'Instant Energy Restored',
-    title: 'Instant Battery Swapping (2-Min Turnaround)',
+    Icon: Store,
+    eyebrow: 'For station teams',
+    title: 'Operate or set up a station',
     description:
-      'Hand over your depleted battery and drive away with a 100% calibrated battery in under 120 seconds. Built specifically for high-tempo commercial Boda Boda riders.',
-    highlightLabel: 'Standard Swap Fee',
-    highlightValue: '5,140 TZS / Pack',
-    note: 'Includes telemetry battery health diagnostics',
-    badge: 'High Fleet Velocity',
-    btnLabel: 'Open swap experience',
-    route: '/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-2',
+      'Open the attendant console for bay allocation, driver hand-off, and receipt previews. Prospective partners can start a station setup inquiry.',
+    highlightLabel: 'Operator workspace',
+    highlightValue: 'Attendant console',
+    note: 'Controls and telemetry are demonstration data.',
+    btnLabel: 'Open station console',
+    route: '/portal/station-agent-box-operations-attendant-portal',
+    secondaryLabel: 'Request station setup',
+    secondaryRoute: '/portal/smartcharge-tanzania-interactive-live-portal-connected-ecosystem#public-inquiry-form',
     features: [
-      'NFC tap verification or USSD push authorization',
-      'Cell thermal shielding for tropical ambient heat',
-      'Escrow pack tracking to prevent battery fraud',
+      'Review the keypad and bay-control walkthrough',
+      'Preview driver authentication and receipts',
+      'Find the station partnership inquiry',
     ],
   },
   {
-    id: 'franchise',
+    id: 'network',
     tone: 'tertiary',
-    Icon: Store,
-    eyebrow: 'Commercial Franchise',
-    title: 'Micro-Franchise Agent Boxes',
+    Icon: ShieldCheck,
+    eyebrow: 'For network & compliance teams',
+    title: 'Review network and compliance views',
     description:
-      'Turn your retail shop, petrol station, or kiosk into an authorized revenue-generating SmartCharge station with our 90/10 automated revenue split model.',
-    highlightLabel: 'Agent Revenue Payout',
-    highlightValue: 'Daily automated M-Pesa',
-    note: 'Complete turnkey hardware installation',
-    btnLabel: 'Open franchise flow',
-    route: '/portal/station-agent-box-operations-attendant-portal',
+      'Explore the EWURA compliance dashboard or the public infrastructure map. Operational figures and controls are illustrative, not connected to live stations.',
+    highlightLabel: 'Available views',
+    highlightValue: 'EWURA · Network',
+    note: 'Illustrative dashboards; no live control actions.',
+    btnLabel: 'Open compliance dashboard',
+    route: '/portal/reliance-solutions-hq-admin-ewura-compliance-portal',
+    secondaryLabel: 'Explore public network',
+    secondaryRoute: '/portal/smartcharge-tanzania-interactive-live-portal-connected-ecosystem',
     features: [
-      'Compact, lockable 4-bay or 8-bay smart enclosures',
-      'Pre-certified EWURA commercial power approval',
-      '24/7 remote monitoring and maintenance support',
+      'Review sample network and compliance summaries',
+      'Explore the infrastructure overview',
+      'Return here to switch to a driver or operator task',
     ],
   },
 ];
@@ -140,9 +145,9 @@ function App() {
             <span>SmartCharge service ecosystem</span>
           </div>
           <nav className="top-links" aria-label="Service navigation">
-            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1">Driver Portal</a>
-            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-2">Swap &amp; History</a>
-            <a href="/portal/station-agent-box-operations-attendant-portal">Agent Console</a>
+            <a href="/portal/client-driver-charging-pwa-experience">Charge or swap</a>
+            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1">History &amp; receipts</a>
+            <a href="/portal/station-agent-box-operations-attendant-portal">Station console</a>
           </nav>
         </div>
       </section>
@@ -160,9 +165,9 @@ function App() {
             <span className="brand-name">SmartCharge</span>
             <span className="brand-subtitle">RELIANCE SOLUTIONS &amp; TECH (T)</span>
           </div>
-          <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1" className="track-button">
+          <a href="/portal/client-driver-charging-pwa-experience" className="track-button">
             <Zap aria-hidden="true" />
-            <span>Track Charging &amp; Swaps</span>
+            <span>Start a journey</span>
           </a>
         </div>
       </header>
@@ -176,17 +181,21 @@ function App() {
         <div className={`system-status ${gatewayStatus}`} role="status" aria-live="polite">
           <span className="system-status__dot" />
           <span className="system-status__copy">
-            <span>System status</span>
+            <span>Platform health</span>
             <strong>
               {gatewayStatus === 'checking'
-                ? 'Checking gateway'
+                ? 'Checking API'
                 : gatewayStatus === 'online'
-                  ? 'Portal gateway online'
-                  : 'Portal gateway unavailable'}
+                  ? 'Application API available'
+                  : 'Application API unavailable'}
             </strong>
           </span>
         </div>
       </section>
+
+      <p className="prototype-note" role="note">
+        Demonstration experience: transactions, payments, telemetry, and device controls are simulated.
+      </p>
 
       <main className="service-grid">
         {services.map((service) => (
@@ -220,7 +229,7 @@ function App() {
 
             <div className="card-actions">
               <a href={service.route} className="primary-link">{service.btnLabel}</a>
-              <a href="/" className="secondary-link">Overview</a>
+              <a href={service.secondaryRoute} className="secondary-link">{service.secondaryLabel}</a>
             </div>
           </article>
         ))}

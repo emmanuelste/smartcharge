@@ -83,8 +83,18 @@ app.get('/portal/:slug', (req, res) => {
   }
 
   const htmlPath = path.join(match.path, 'code.html');
-  const html = fs.readFileSync(htmlPath, 'utf8');
-  res.type('html').send(html);
+  const html = fs
+    .readFileSync(htmlPath, 'utf8')
+    .replace(
+      /<link\b(?=[^>]*\bhref=["']https:\/\/fonts\.googleapis\.com\/css2\?family=Material\+Symbols[^"']*["'])[^>]*>/gi,
+      '',
+    )
+    .replace(
+      /(\bsrc=["'])https:\/\/lh3\.googleusercontent\.com\/aida\/[^"']+(["'])/gi,
+      '$1/reliance-logo.png$2',
+    )
+    .replace(/<\/head>/i, '<link rel="stylesheet" href="/portal-shell.css"></head>');
+  res.type('html').send(html.replace(/<\/body>/i, '<script defer src="/portal-shell.js"></script></body>'));
 });
 
 const distPath = path.join(__dirname, 'dist');

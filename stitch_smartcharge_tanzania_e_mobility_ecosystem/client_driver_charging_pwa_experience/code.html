@@ -429,17 +429,23 @@
 </a>
 </div>
 </div>
-<!-- Authorize Session CTA Button -->
+<!-- Demo Session CTA Button -->
 <button class="w-full py-3.5 px-space-md rounded-xl bg-secondary hover:bg-secondary-fixed text-on-secondary hover:text-on-secondary-fixed font-headline-md text-headline-md font-bold shadow-md transition-all flex items-center justify-center gap-2" id="btnStartSession" onclick="startSimulatedSession()">
 <span class="material-symbols-outlined text-[24px]">power_settings_new</span>
-<span>Authorize Session • 2,268 TZS</span>
+<span>Preview demo session • 2,268 TZS</span>
 </button>
+<div class="hidden mt-space-sm p-space-sm rounded-lg bg-tertiary-fixed/40 text-on-tertiary-fixed font-body-sm text-body-sm" id="swap-demo-feedback" role="status">
+  Swap preview only. No live battery pack is reserved or allocated.
+</div>
 </div>
 </div>
 </div>
 <!-- Active Live Session Telemetry Panel (Real-time charging state) -->
-<section class="w-full mb-space-lg" id="active-telemetry">
+<section class="hidden w-full mb-space-lg" id="active-telemetry">
 <div class="bg-inverse-surface rounded-xl text-inverse-on-surface p-space-lg shadow-xl relative overflow-hidden">
+<div class="mb-space-md rounded-lg border border-secondary-fixed/30 bg-surface-container-lowest/10 px-space-md py-space-sm font-body-sm text-primary-fixed">
+  Demo preview only. Payments, charger hardware, and telemetry are not connected.
+</div>
 <!-- Glow ambient -->
 <div class="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
 <div class="relative z-10 flex flex-col gap-space-lg">
@@ -448,8 +454,8 @@
 <div class="flex items-center gap-space-sm">
 <div class="w-3 h-3 rounded-full bg-secondary-fixed animate-ping"></div>
 <div>
-<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase tracking-wider">Live Charging Telemetry</span>
-<h3 class="font-headline-md text-headline-md text-surface-bright">Session Active: Gun #02 (Mwenge Terminal)</h3>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase tracking-wider">Sample session telemetry</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright">Demo preview: Gun #02 (Mwenge Terminal)</h3>
 </div>
 </div>
 <div class="flex items-center gap-space-sm">
@@ -696,15 +702,15 @@
 
         priceEl.innerHTML = calculatedTzs.toLocaleString() + ' <span class="font-label-md text-label-md">TZS</span>';
         timeEl.innerHTML = calculatedMinutes + ' <span class="font-label-md text-label-md">Mins</span>';
-        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">power_settings_new</span><span>Authorize Session &bull; ' + calculatedTzs.toLocaleString() + ' TZS</span>';
+        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">visibility</span><span>Preview demo session &bull; ' + calculatedTzs.toLocaleString() + ' TZS</span>';
       } else if (currentMode === 'premium') {
         priceEl.innerHTML = '5,000 <span class="font-label-md text-label-md">TZS</span>';
         timeEl.innerHTML = '42 <span class="font-label-md text-label-md">Mins</span>';
-        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">bolt</span><span>Authorize Full Flat &bull; 5,000 TZS</span>';
+        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">visibility</span><span>Preview full-charge session &bull; 5,000 TZS</span>';
       } else if (currentMode === 'swap') {
         priceEl.innerHTML = '5,140 <span class="font-label-md text-label-md">TZS</span>';
         timeEl.innerHTML = '2 <span class="font-label-md text-label-md">Mins</span>';
-        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">published_with_changes</span><span>Reserve Instant Swap &bull; 5,140 TZS</span>';
+        ctaBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">visibility</span><span>Preview swap request &bull; 5,140 TZS</span>';
       }
     }
 
@@ -764,21 +770,33 @@
 
     function pickStation(name, status, address) {
       document.getElementById('currentStationTitle').textContent = name;
-      alert('Selected Hub: ' + name + ' (' + status + ')');
+      const banner = document.getElementById('reservationAlert');
+      document.getElementById('reservationText').textContent = name + ' selected · ' + status + ' · ' + address + '. Availability is sample data.';
+      banner.querySelector('.font-label-sm.font-bold').textContent = 'DEMO ONLY';
+      banner.classList.remove('hidden');
+      banner.classList.add('flex');
     }
 
     function reserveBay(stationName) {
       const banner = document.getElementById('reservationAlert');
       const text = document.getElementById('reservationText');
-      text.textContent = 'Bay confirmed & held at ' + stationName + ' for 15 minutes. Reservation Token #SC-4491.';
+      text.textContent = 'Hold request preview for ' + stationName + '. No live bay was reserved.';
+      banner.querySelector('.font-label-sm.font-bold').textContent = 'DEMO ONLY';
       banner.classList.remove('hidden');
       banner.classList.add('flex');
     }
 
     function startSimulatedSession() {
+      const swapFeedback = document.getElementById('swap-demo-feedback');
+      if (currentMode === 'swap') {
+        swapFeedback.classList.remove('hidden');
+        swapFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
       const telemetrySection = document.getElementById('active-telemetry');
+      telemetrySection.classList.remove('hidden');
       telemetrySection.scrollIntoView({ behavior: 'smooth' });
-      alert('Handshake OK! Gun engaged with vehicle T 482 DXC. Zero-crossing SSR energized.');
     }
 
     function emergencyStop() {
