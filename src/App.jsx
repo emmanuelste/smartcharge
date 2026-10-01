@@ -64,6 +64,7 @@ const services = [
 
 function App() {
   const [currentRoute, setCurrentRoute] = useState(window.location.pathname);
+  const [gatewayStatus, setGatewayStatus] = useState('checking');
 
   useEffect(() => {
     const handleRouteChange = () => {
@@ -74,19 +75,49 @@ function App() {
     return () => window.removeEventListener('popstate', handleRouteChange);
   }, []);
 
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch('/api/health')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Gateway health check failed');
+        }
+
+        return response.json();
+      })
+      .then(({ ok }) => {
+        if (isMounted) {
+          setGatewayStatus(ok ? 'online' : 'offline');
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          setGatewayStatus('offline');
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   const currentService = services.find((service) => service.route === currentRoute);
 
   if (currentService) {
     return (
       <div className="portal-view-shell">
         <header className="portal-view-header">
-          <button type="button" className="back-button" onClick={() => {
-            window.history.pushState({}, '', '/');
-            setCurrentRoute('/');
-          }}>
+          <button
+            type="button"
+            className="back-button"
+            onClick={() => {
+              window.history.pushState({}, '', '/');
+              setCurrentRoute('/');
+            }}
+          >
             ← Overview
           </button>
-
           <div className="portal-view-title-wrap">
             <div className="portal-view-kicker">SmartCharge Tanzania</div>
             <h1>{currentService.title}</h1>
@@ -102,6 +133,20 @@ function App() {
 
   return (
     <div className="smartcharge-page">
+      <section className="secondary-bar">
+        <div className="secondary-bar__inner">
+          <div className="label-pill">
+            <span className="dot" />
+            <span>SmartCharge service ecosystem</span>
+          </div>
+          <nav className="top-links" aria-label="Service navigation">
+            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1">Driver Portal</a>
+            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-2">Swap &amp; History</a>
+            <a href="/portal/station-agent-box-operations-attendant-portal">Agent Console</a>
+          </nav>
+        </div>
+      </section>
+
       <header className="smartcharge-header">
         <div className="header-left">
           <img
@@ -110,7 +155,6 @@ function App() {
             className="brand-mark"
           />
         </div>
-
         <div className="header-right">
           <div className="brand-text">
             <span className="brand-name">SmartCharge</span>
@@ -123,17 +167,24 @@ function App() {
         </div>
       </header>
 
-      <section className="secondary-bar">
-        <div className="secondary-bar__inner">
-          <div className="label-pill">
-            <span className="dot" />
-            <span>SmartCharge service ecosystem</span>
-          </div>
-          <nav className="top-links" aria-label="Service navigation">
-            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1">Driver Portal</a>
-            <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-2">Swap &amp; History</a>
-            <a href="/portal/station-agent-box-operations-attendant-portal">Agent Console</a>
-          </nav>
+      <section className="overview-intro" aria-labelledby="overview-heading">
+        <div className="overview-copy">
+          <div className="overview-kicker">Energy access, connected</div>
+          <h1 id="overview-heading">Charge, swap, and power forward.</h1>
+          <p>Choose the service pathway that fits your journey.</p>
+        </div>
+        <div className={`system-status ${gatewayStatus}`} role="status" aria-live="polite">
+          <span className="system-status__dot" />
+          <span className="system-status__copy">
+            <span>System status</span>
+            <strong>
+              {gatewayStatus === 'checking'
+                ? 'Checking gateway'
+                : gatewayStatus === 'online'
+                  ? 'Portal gateway online'
+                  : 'Portal gateway unavailable'}
+            </strong>
+          </span>
         </div>
       </section>
 
