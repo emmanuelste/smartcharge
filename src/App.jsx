@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+import { ArrowLeftRight, CheckCircle2, Gauge, Store, Zap } from 'lucide-react';
 
 const services = [
   {
     id: 'billing',
     tone: 'primary',
-    icon: 'speed',
+    Icon: Gauge,
     eyebrow: 'Predictable Billing',
     title: 'Standard Direct AC Charging',
     description:
@@ -23,7 +24,7 @@ const services = [
   {
     id: 'swap',
     tone: 'secondary',
-    icon: 'swap_calls',
+    Icon: ArrowLeftRight,
     eyebrow: 'Instant Energy Restored',
     title: 'Instant Battery Swapping (2-Min Turnaround)',
     description:
@@ -43,7 +44,7 @@ const services = [
   {
     id: 'franchise',
     tone: 'tertiary',
-    icon: 'storefront',
+    Icon: Store,
     eyebrow: 'Commercial Franchise',
     title: 'Micro-Franchise Agent Boxes',
     description:
@@ -116,7 +117,7 @@ function App() {
             <span className="brand-subtitle">RELIANCE SOLUTIONS &amp; TECH (T)</span>
           </div>
           <a href="/portal/smartcharge-tanzania-public-portal-zero-login-history-tracker-1" className="track-button">
-            <span className="material-symbols-outlined">bolt</span>
+            <Zap aria-hidden="true" />
             <span>Track Charging &amp; Swaps</span>
           </a>
         </div>
@@ -142,7 +143,7 @@ function App() {
             {service.badge ? <div className="floating-badge">{service.badge}</div> : null}
 
             <div className="card-icon-box">
-              <span className="material-symbols-outlined">{service.icon}</span>
+              <service.Icon aria-hidden="true" />
             </div>
 
             <div className="card-eyebrow">{service.eyebrow}</div>
@@ -160,7 +161,7 @@ function App() {
             <ul className="feature-list">
               {service.features.map((feature) => (
                 <li key={feature}>
-                  <span className="material-symbols-outlined check-icon">check_circle</span>
+                  <CheckCircle2 className="check-icon" aria-hidden="true" />
                   <span>{feature}</span>
                 </li>
               ))}
