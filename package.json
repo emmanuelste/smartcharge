@@ -8,14 +8,21 @@
     "dev": "concurrently -k \"node server.js\" \"vite --host 0.0.0.0 --port 5173\"",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 4173",
-    "start": "node server.js"
+    "start": "node server.js",
+    "staff:create": "node scripts/create-staff.js"
   },
   "dependencies": {
-    "@fontsource-variable/material-symbols-outlined": "^5.3.8",
+    "bcryptjs": "^3.0.3",
+    "connect-pg-simple": "^10.0.0",
     "express": "^4.19.2",
+    "express-rate-limit": "^8.7.0",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
     "lucide-react": "^1.49.0",
+    "pg": "^8.23.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.2",
